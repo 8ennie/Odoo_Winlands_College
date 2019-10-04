@@ -14,7 +14,7 @@ Ayaaz
 
 
 # Extra features
-if we have time that is 
 * Chat function (students and Academic staff)
 * Export-to-PDF
+* ???
 
