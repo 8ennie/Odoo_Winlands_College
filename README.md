@@ -1,14 +1,19 @@
 # Odoo_Winlands_College
 The Odoo Project for Socio Informatics
 # Roles are as followed(Product Owner):
-## Views
+### Views
 Andrew
-## Security
+### Security
 Tomas
-## models
+### models
 Bennie
-## Demo_data
+### Demo_data
 Ayaaz
-## Logo
+### Logo
 Ayaaz
+
+
+# Extra features
+* Chat function (students and Academic staff)
+* Export to PDF
 
