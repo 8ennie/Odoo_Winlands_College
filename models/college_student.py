@@ -9,10 +9,10 @@ class CollegeStudent(models.Model):
     #Relationships
     partner_id = fields.Many2one('res.partner',delegate=True,
         ondelete='cascade',required=True)
-    student_modules = field.One2many('college_enrolled_student','student_id',
+    student_modules = fields.One2many('college.enrolledstudent','student_id',
     string = 'Module ID')
-    student_program = field.Many2one('college.program', string = 'Program ID',
+    student_program = fields.Many2one('college.program', string = 'Program ID',
         ondelete='cascade')
 
     #Attributes
-    start_year = field.Integer()
+    start_year = fields.Integer('Starting year')

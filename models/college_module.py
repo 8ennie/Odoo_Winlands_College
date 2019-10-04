@@ -7,11 +7,11 @@ class CollegeModule(models.Model):
     _description = 'A class for different modules at winlands college'
 
     #Relationships
-    module_students = field.One2many('college_enrolled_student','module_id',
+    module_students = fields.One2many('college.enrolledstudent','module_id',
         string = 'Student ID')
 
     #Attributes
-    module_name = field.Char()
+    module_name = fields.Char('Name')
         #the time in quaters that the modules have (2 Quaters = 1 Semester)
-    module_time_frame = field.Integer()
-    module_creadits = field.Integer()
+    module_time_frame = fields.Integer('Timeframe')
+    module_creadits = fields.Integer('Credits')

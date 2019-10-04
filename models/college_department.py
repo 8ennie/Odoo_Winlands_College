@@ -9,4 +9,4 @@ class CollegeDepartment(models.Model):
     #Relationships
 
     #Attributes
-    department_name = field.Char()
+    department_name = fields.Char('Name')

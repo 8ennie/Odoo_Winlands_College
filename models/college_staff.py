@@ -11,4 +11,4 @@ class CollegeStaff(models.Model):
         ondelete='cascade',required=True)
 
     #Attributes
-    staff_email = field.Char()
+    staff_email = fields.Char('Staff Email Adress')
