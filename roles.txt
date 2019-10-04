@@ -1,3 +1,5 @@
-Views - Andrew, Ayaaz
+Views - Andrew
 Security - Tomas
 models - Bennie
+Demo_data - Ayaaz
+Logo - Ayaaz
