@@ -16,5 +16,5 @@ Ayaaz
 # Extra features
 * Chat function (students and Academic staff)
 * Export-to-PDF
-* ???
+* The use of an API external API (like the weather API)
 
