@@ -17,4 +17,4 @@ Ayaaz
 * Chat function (students and Academic staff)
 * Export-to-PDF
 * The use of an API external API (like the weather API)
-
+* Text-to-speech function (taking the marks and making it a MP3 file)
