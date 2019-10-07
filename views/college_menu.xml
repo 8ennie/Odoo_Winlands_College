@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="college_menu"
+              name="College" />
+
+    <act_window id="action_college_modules"
+      name="Winelands College modules"
+      res_model="college.module"
+      view_mode="tree,form"
+	/>
+
+    <menuitem id="menu_college"
+              name="Winelands College Modules"
+	      action="action_college_modules"
+              parent="college_menu" />
+
+</odoo>
