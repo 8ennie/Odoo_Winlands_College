@@ -26,7 +26,7 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        # 'security/wineLands_security.xml',
+        # 'security/winelands_security.xml',
         'views/views.xml',
         'views/templates.xml',
         'views/college_menu.xml',
