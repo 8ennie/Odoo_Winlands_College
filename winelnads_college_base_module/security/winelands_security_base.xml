@@ -1,0 +1,32 @@
+
+<?xml version="1.0" ?>
+<odoo>
+<!-- Category for collage (Oddo does this to orginise related group..p81)-->
+<record id="module_winelands_category" model="ir.module.category">
+    <field name="name">winelands</field>
+  </record>
+<!-- Student User Group -->
+<record id="winelands_group_student" model="res.groups">
+    <field name="name">Student</field>
+    <field name="category_id"
+           ref="module_winelands_category"/>
+    <field name="implied_ids"
+           eval="[(4, ref('base.group_user'))]"/>
+</record>
+<!-- Academic User Group -->
+<record id="winelands_group_academic" model="res.groups">
+    <field name="name">Academic</field>
+    <field name="category_id"
+           ref="module_winelands_category"/>
+    <field name="implied_ids"
+           eval="[(4, ref('base.group_user'))]"/>
+</record>
+<!-- Admin User Group -->
+<record id="winelands_group_admin_staff" model="res.groups">
+    <field name="name">AdminStaff</field>
+    <field name="category_id"
+           ref="module_winelands_category"/>
+    <field name="implied_ids"
+           eval="[(4, ref('base.group_user'))]"/>
+</record>
+</odoo>
