@@ -7,6 +7,6 @@ class CollegeDepartment(models.Model):
     _description = 'A class for different departments at winlands college'
 
     #Relationships
-
+    
     #Attributes
     department_name = fields.Char('Name')
