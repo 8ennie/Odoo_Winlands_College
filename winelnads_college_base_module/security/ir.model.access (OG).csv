@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_./custom-addons/winlands_college_managment_./custom-addons/winlands_college_managment,./custom-addons/winlands_college_managment../custom-addons/winlands_college_managment,model_./custom-addons/winlands_college_managment_./custom-addons/winlands_college_managment,,1,0,0,0

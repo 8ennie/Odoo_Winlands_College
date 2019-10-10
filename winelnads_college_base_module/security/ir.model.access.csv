@@ -1,2 +1,13 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_./custom-addons/winlands_college_managment_./custom-addons/winlands_college_managment,./custom-addons/winlands_college_managment../custom-addons/winlands_college_managment,model_./custom-addons/winlands_college_managment_./custom-addons/winlands_college_managment,,1,0,0,0
+access_collage_student_department,studentUser,college.department,winelands_group_student,1,0,0,0
+access_collage_academic_department,academicUser,college.department,winelands_group_academic,1,0,0,0
+access_collage_adminstaff_department,adminstaffUser,college.department,winelands_group_admin_staff,1,0,0,0
+,,college.enrolledstudent
+college.lecturedclasses
+college.module
+college.program
+college.staff.academic
+college.staff.admin
+college.staff
+college.student
+
