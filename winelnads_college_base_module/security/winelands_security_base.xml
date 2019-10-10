@@ -22,6 +22,7 @@
            eval="[(4, ref('base.group_user'))]"/>
 </record>
 <!-- Admin User Group -->
+<!--This might be more then just a base user, will check with the gang-->
 <record id="winelands_group_admin_staff" model="res.groups">
     <field name="name">AdminStaff</field>
     <field name="category_id"

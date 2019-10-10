@@ -7,4 +7,3 @@ college.staff.academic
 college.staff.admin
 college.staff
 college.student
-
