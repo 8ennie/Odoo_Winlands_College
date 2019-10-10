@@ -3,10 +3,10 @@
     'name': "Winlands College Managment",
 
     'summary': """
-        A module to manage, students and there marks at Winlands College""",
+         Test A module to manage, students and there marks at Winlands College""",
 
     'description': """
-        A module to manage students and there marks in diffretn Modules.
+        Test A module to manage students and there marks in diffretn Modules.
     """,
 
     'application': True,
