@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Winlands College Managment",
+    'name': "Winelands College Base Module",
 
     'summary': """
-         Test A module to manage, students and there marks at Winlands College""",
+         A module to manage, students and there marks at Winlands College""",
 
     'description': """
-        Test A module to manage students and there marks in diffretn Modules.
+        A module to manage students and there marks in diffretn Modules.
     """,
 
     'application': True,
@@ -25,8 +25,8 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-        # 'security/winelands_security.xml',
+        'security/winelands_security.xml',
+        'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
         'views/college_menu.xml',
