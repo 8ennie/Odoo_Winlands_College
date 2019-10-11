@@ -2,7 +2,7 @@
 <odoo>
 <!-- Category for collage (Oddo does this to orginise related group..p81)-->
 <record id="module_winelands_category" model="ir.module.category">
-    <field name="name">winelands</field>
+    <field name="name">WineLands College</field>
   </record>
 <!-- Student User Group -->
 <record id="winelands_group_student" model="res.groups">
@@ -14,7 +14,7 @@
 </record>
 <!-- Academic User Group -->
 <record id="winelands_group_academic" model="res.groups">
-    <field name="name">Academic</field>
+    <field name="name">Academic Staff</field>
     <field name="category_id"
            ref="module_winelands_category"/>
     <field name="implied_ids"
@@ -23,10 +23,18 @@
 <!-- Admin User Group -->
 <!--This might be more then just a base user, will check with the gang-->
 <record id="winelands_group_admin_staff" model="res.groups">
-    <field name="name">AdminStaff</field>
+    <field name="name">Admin Staff</field>
     <field name="category_id"
            ref="module_winelands_category"/>
     <field name="implied_ids"
            eval="[(4, ref('base.group_user'))]"/>
+</record>
+<!-- -->
+<record id="winelands_group_root_admin" model="res.groups">
+    <field name="name">Root Admin</field>
+    <field name="category_id"
+           ref="module_winelands_category"/>
+    <field name="implied_ids"
+           eval="[(4, ref('base.user_admin'))]"/>
 </record>
 </odoo>
