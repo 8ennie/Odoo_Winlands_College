@@ -29,7 +29,7 @@
     <field name="implied_ids"
            eval="[(4, ref('base.group_user'))]"/>
 </record>
-<!-- -->
+<!--This is the root user, in case-->
 <record id="winelands_group_root_admin" model="res.groups">
     <field name="name">Root Admin</field>
     <field name="category_id"
