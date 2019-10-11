@@ -25,7 +25,7 @@
 
     # always loaded
     'data': [
-        'security/winelands_security.xml',
+        'security/winelands_security_base.xml',
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
