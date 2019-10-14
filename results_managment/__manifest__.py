@@ -20,13 +20,18 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base', 'winelands_college_base_module'],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
+        'views/student_view.xml',
+        'views/program_view.xml',
+        'views/department_view.xml',
+        'views/module_view.xml',
+
     ],
     # only loaded in demonstration mode
     'demo': [
