@@ -13,4 +13,4 @@ class CollegeEnrolledStudent(models.Model):
 
     #Attributes
     year = fields.Integer('Year')
-    mark = fields.Float('Average Rating')
+    mark = fields.Float('Mark')

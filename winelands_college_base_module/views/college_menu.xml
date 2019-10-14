@@ -23,6 +23,11 @@
     res_model="college.staff.admin"
     view_mode="tree,form"
   />
+  <act_window id="action_college_marks"
+    name="College Marks"
+    res_model="college.enrolledstudent"
+    view_mode="tree,form"
+  />
 
     <menuitem id="menu_college_modules"
               name="Modules"
@@ -42,6 +47,11 @@
     <menuitem id="menu_college_staff_admin"
               name="Admin Staff"
         action="action_college_staff_admin"
+              parent="college_menu" />
+
+    <menuitem id="menu_college_marks"
+              name="Marks"
+        action="action_college_marks"
               parent="college_menu" />
 
 </odoo>
