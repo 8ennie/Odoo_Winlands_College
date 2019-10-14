@@ -9,9 +9,9 @@
         A module to manage students and there marks in diffretn Modules.
     """,
 
-    'application': True,
+    'application': False,
 
-    'author': "23725648; 20456395; 21071926",
+    'author': "23725648; 20456395; 21071926; 19772815",
     'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -28,7 +28,6 @@
         'security/winelands_security_base.xml',
         'security/ir.model.access.csv',
         'views/college_menu.xml',
-
     ],
     # only loaded in demonstration mode
     'demo': [
