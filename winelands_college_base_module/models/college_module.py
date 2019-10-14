@@ -14,4 +14,4 @@ class CollegeModule(models.Model):
     module_name = fields.Char('Name')
         #the time in quaters that the modules have (2 Quaters = 1 Semester)
     module_time_frame = fields.Integer('Timeframe')
-    module_creadits = fields.Integer('Credits')
+    module_credits = fields.Integer('Credits')

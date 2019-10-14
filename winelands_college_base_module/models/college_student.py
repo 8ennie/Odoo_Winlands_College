@@ -15,4 +15,4 @@ class CollegeStudent(models.Model):
         ondelete='cascade')
 
     #Attributes
-    start_year = fields.Integer('Starting year')
+    start_year = fields.Integer('Starting Year')

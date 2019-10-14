@@ -8,7 +8,7 @@
       <form string="Department">
     <sheet>
           <group>
-            <field name="Department Name" />
+            <field name="department_name" />
           </group>
     </sheet>
       </form>
@@ -20,7 +20,7 @@
     <field name="model">college.department</field>
     <field name="arch" type="xml">
       <tree>
-        <field name="Department Name" />
+        <field name="department_name" />
       </tree>
     </field>
   </record>

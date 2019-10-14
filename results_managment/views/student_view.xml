@@ -8,11 +8,10 @@
       <form string="Student">
     <sheet>
           <group>
-            <field name="Student Number" />
-            <field name="Email" />
-            <field name="Module" />
-            <field name="Program" />
-            <field name="Starting Year" />
+            <field name="partner_id" />
+            <field name="student_modules" />
+            <field name="student_program" />
+            <field name="start_year" />
           </group>
     </sheet>
       </form>
@@ -24,11 +23,10 @@
     <field name="model">college.student</field>
     <field name="arch" type="xml">
       <tree>
-        <field name="Student Number" />
-        <field name="Email" />
-        <field name="Module" />
-        <field name="Program" />
-        <field name="Starting Year" />
+        <field name="partner_id" />
+        <field name="student_modules" />
+        <field name="student_program" />
+        <field name="start_year" />
       </tree>
     </field>
   </record>
