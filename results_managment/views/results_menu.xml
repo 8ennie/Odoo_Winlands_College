@@ -1,0 +1,33 @@
+<odoo>
+  <menuitem id="college_results_menu"
+            name="College Results" />
+
+  <act_window id="action_results_module"
+    name="College Modules"
+    res_model="college.module"
+    view_mode="tree,form"
+  />
+  <act_window id="action_results_student"
+    name="College Students"
+    res_model="college.student"
+    view_mode="tree,form"
+  />
+  <act_window id="action_results_mark"
+    name="College Marks"
+    res_model="college.enrolledstudent"
+    view_mode="tree,form"
+  />
+
+  <menuitem id="menu_results_module"
+            name="Modules"
+      action="action_results_module"
+            parent="college_results_menu" />
+  <menuitem id="menu_results_student"
+            name="Students"
+      action="action_results_student"
+            parent="college_results_menu" />
+  <menuitem id="menu_results_mark"
+            name="Marks"
+      action="action_results_mark"
+            parent="college_results_menu" />
+</odoo>
