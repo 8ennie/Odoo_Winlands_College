@@ -9,6 +9,6 @@ class CollegeProgram(models.Model):
     #Relationships
 
     #Attributes
-    program_name = fields.Char('Name')
-    program_length = fields.Integer('Length')
-    program_qualification = fields.Char('Qualification')
+    name = fields.Char('Name')
+    length = fields.Integer('Length')
+    qualification = fields.Char('Qualification')

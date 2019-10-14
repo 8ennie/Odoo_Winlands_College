@@ -8,9 +8,9 @@
       <form string="Program">
     <sheet>
           <group>
-            <field name="program_name" />
-            <field name="program_length" />
-            <field name="program_qualification" />
+            <field name="name" />
+            <field name="length" />
+            <field name="qualification" />
           </group>
     </sheet>
       </form>
@@ -22,9 +22,9 @@
     <field name="model">college.program</field>
     <field name="arch" type="xml">
       <tree>
-        <field name="program_name" />
-        <field name="program_length" />
-        <field name="program_qualification" />
+        <field name="name" />
+        <field name="length" />
+        <field name="qualification" />
       </tree>
     </field>
   </record>

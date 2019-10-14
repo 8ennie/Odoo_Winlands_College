@@ -8,7 +8,9 @@
       <form string="Student">
     <sheet>
           <group>
-            <field name="partner_id" />
+            <field name="id" />
+            <field name="email" />
+            <field name="user_ids" />
             <field name="student_modules" />
             <field name="student_program" />
             <field name="start_year" />

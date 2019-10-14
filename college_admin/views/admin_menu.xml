@@ -22,6 +22,11 @@
     res_model="college.student"
     view_mode="tree,form"
   />
+  <act_window id="action_admin_program"
+    name="College Program"
+    res_model="college.program"
+    view_mode="tree,form"
+  />
 
   <menuitem id="menu_admin_department"
             name="Departments"
@@ -38,5 +43,9 @@
   <menuitem id="menu_admin_student"
             name="Students"
       action="action_admin_student"
+            parent="college_admin_menu" />
+  <menuitem id="menu_admin_program"
+            name="Program"
+      action="action_admin_program"
             parent="college_admin_menu" />
 </odoo>
