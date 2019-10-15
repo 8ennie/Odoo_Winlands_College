@@ -32,6 +32,7 @@
         'views/program_view.xml',
         'views/department_view.xml',
         'views/module_view.xml',
+        'views/staff_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
