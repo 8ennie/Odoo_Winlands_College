@@ -38,6 +38,16 @@
            eval="[(4, ref('base.user_admin'))]"/>
 </record>
 
+<!-- Hidene Group (This is to hide the top value)-->
+<record id="winelands_group_root_hidden" model="res.groups">
+    <field name="name">Hide</field>
+    <field name="category_id"
+           ref="module_winelands_category"/>
+    <field name="implied_ids"
+           eval="[(4, ref('base.user_admin'))]"/>
+</record>
+
+
 <!--For dev mode we have changed the ubdate to 0, but it should be one-->
 <!--
 <data noupdate="0">
