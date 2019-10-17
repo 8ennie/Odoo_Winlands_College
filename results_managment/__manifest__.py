@@ -33,6 +33,7 @@
         'views/department_view.xml',
         'views/module_view.xml',
         'views/staff_view.xml',
+        'views/enrolled_student_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
