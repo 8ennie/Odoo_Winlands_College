@@ -14,6 +14,7 @@
             <field name="student_program" />
             <field name="start_year" />
             <field name="student_modules" attrs="{'invisible' :[('id', '=', False)]}"/>
+            <field name="person_type" attrs="{'invisible': False}"/>
           </group>
           <group attrs="{'invisible' :[('id', '!=', False)]}" >
             <field name="create_user" attrs="{'readonly': False}"/>

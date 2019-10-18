@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+import datetime
 
 class CollegeStudent(models.Model):
     _name = 'college.student'
@@ -15,4 +16,13 @@ class CollegeStudent(models.Model):
         ondelete='cascade')
 
     #Attributes
-    start_year = fields.Integer('Starting Year')
+    start_year = fields.Char('Starting Year',size=4,default = str(datetime.datetime.now().year))
+
+    #DemieFields
+
+
+    @api.model
+    def create(self, vals):
+        vals['pType'] = "Student"
+        res = super().create(vals)
+        return res

@@ -13,7 +13,7 @@
             <field name="email" attrs="{'invisible' :[('id', '=', False)]}"/>
           </group>
           <group attrs="{'invisible' :[('id', '!=', False)]}" >
-            <field name="create_user" attrs="{'readonly': False}"/>
+            <field name="create_user" />
           </group>
     </sheet>
       </form>

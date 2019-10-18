@@ -11,3 +11,15 @@ class CollegeAcademicStaff(models.Model):
         ondelete='cascade',required=True)
 
     #Attributes
+
+
+    #DemieFields
+
+
+
+    @api.model
+    def create(self, vals):
+        vals['pType'] = "Academic"
+        super().create(vals)
+        res = super().create(vals)
+        return res
