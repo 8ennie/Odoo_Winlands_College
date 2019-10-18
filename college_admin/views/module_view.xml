@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<odoo>
+
+  <record id="view_form_module" model="ir.ui.view">
+    <field name="name">Module Form</field>
+    <field name="model">college.module</field>
+    <field name="arch" type="xml">
+      <form string="Module">
+    <sheet>
+          <group>
+            <field name="name" />
+            <field name="time_frame" />
+            <field name="credits" />
+            <field name="module_students" />
+          </group>
+    </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_tree_module" model="ir.ui.view">
+    <field name="name">Module List</field>
+    <field name="model">college.module</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="id" />
+        <field name="name" />
+        <field name="time_frame" />
+        <field name="credits" />
+      </tree>
+    </field>
+  </record>
+</odoo>

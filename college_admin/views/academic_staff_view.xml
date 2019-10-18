@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<odoo>
+
+  <record id="view_form_academic_staff" model="ir.ui.view">
+    <field name="name">Academic Staff Form</field>
+    <field name="model">college.staff.academic</field>
+    <field name="arch" type="xml">
+      <form string="Academic Staff">
+    <sheet>
+          <group>
+            <field name="id" attrs="{'invisible' :[('id', '=', False)]}"/>
+            <field name="name"/>
+            <field name="email" attrs="{'invisible' :[('id', '=', False)]}"/>
+          </group>
+          <group attrs="{'invisible' :[('id', '!=', False)]}" >
+            <field name="create_user" attrs="{'readonly': False}"/>
+          </group>
+    </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_tree_academic_staff" model="ir.ui.view">
+    <field name="name">Academic Staff List</field>
+    <field name="model">college.staff.academic</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="partner_id" />
+      </tree>
+    </field>
+  </record>
+</odoo>

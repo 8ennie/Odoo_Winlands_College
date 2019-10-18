@@ -1,6 +1,6 @@
 <odoo>
   <menuitem id="college_admin_menu"
-            name="College Admin" 
+            name="College Admin"
             groups="winelands_college_base_module.winelands_group_admin_staff"
             />
   <act_window id="action_admin_department"
@@ -33,6 +33,12 @@
     res_model="college.program"
     view_mode="tree,form"
   />
+  <act_window id="action_admin_module"
+  groups="winelands_college_base_module.winelands_group_admin_staff"
+    name="College Module"
+    res_model="college.module"
+    view_mode="tree,form"
+  />
   <menuitem id="menu_admin_department"
             name="Departments"
             groups="winelands_college_base_module.winelands_group_admin_staff"
@@ -55,6 +61,11 @@
             parent="college_admin_menu" />
   <menuitem id="menu_admin_program"
             name="Program"
+            groups="winelands_college_base_module.winelands_group_admin_staff"
+      action="action_admin_program"
+            parent="college_admin_menu" />
+  <menuitem id="menu_admin_module"
+            name="Module"
             groups="winelands_college_base_module.winelands_group_admin_staff"
       action="action_admin_program"
             parent="college_admin_menu" />
