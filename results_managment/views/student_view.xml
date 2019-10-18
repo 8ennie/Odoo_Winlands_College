@@ -8,12 +8,15 @@
       <form string="Student">
     <sheet>
           <group>
-            <field name="id" />
-            <field name="email" />
-            <field name="user_ids" />
-            <field name="student_modules" />
+            <field name="id" attrs="{'invisible' :[('id', '=', False)]}"/>
+            <field name="name"/>
+            <field name="email" attrs="{'invisible' :[('id', '=', False)]}"/>
             <field name="student_program" />
             <field name="start_year" />
+            <field name="student_modules" attrs="{'invisible' :[('id', '=', False)]}"/>
+          </group>
+          <group attrs="{'invisible' :[('id', '!=', False)]}" >
+            <field name="create_user" attrs="{'readonly': False}"/>
           </group>
     </sheet>
       </form>
@@ -26,7 +29,6 @@
     <field name="arch" type="xml">
       <tree>
         <field name="partner_id" />
-        <field name="student_modules" />
         <field name="student_program" />
         <field name="start_year" />
       </tree>

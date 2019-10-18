@@ -9,3 +9,4 @@ from . import college_staff_academic
 from . import college_staff_admin
 from . import college_lectures_class
 from . import college_enrolled_student
+from . import partner
