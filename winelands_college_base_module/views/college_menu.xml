@@ -1,57 +1,67 @@
 <?xml version="1.0"?>
 <odoo>
     <menuitem id="college_menu"
-              name="College" />
+              name="College" 
+              groups= "winelands_college_base_module.winelands_group_root_hidden"/>
 
     <act_window id="action_college_modules"
+      groups= "winelands_college_base_module.winelands_group_root_hidden"
       name="College Modules"
       res_model="college.module"
       view_mode="tree,form"
 	/>
   <act_window id="action_college_students"
+  groups= "winelands_college_base_module.winelands_group_root_hidden"
     name="College Students"
     res_model="college.student"
     view_mode="tree,form"
   />
   <act_window id="action_college_staff_academic"
+  groups= "winelands_college_base_module.winelands_group_root_hidden"
     name="College Academic Staff"
     res_model="college.staff.academic"
     view_mode="tree,form"
   />
   <act_window id="action_college_staff_admin"
+  groups= "winelands_college_base_module.winelands_group_root_hidden"
     name="College Admin Staff"
     res_model="college.staff.admin"
     view_mode="tree,form"
   />
   <act_window id="action_college_marks"
+  groups= "winelands_college_base_module.winelands_group_root_hidden"
     name="College Marks"
     res_model="college.enrolledstudent"
     view_mode="tree,form"
   />
 
     <menuitem id="menu_college_modules"
+    groups= "winelands_college_base_module.winelands_group_root_hidden"
               name="Modules"
 	      action="action_college_modules"
               parent="college_menu" />
 
     <menuitem id="menu_college_students"
+    groups= "winelands_college_base_module.winelands_group_root_hidden"
               name="Students"
 	      action="action_college_students"
               parent="college_menu" />
 
     <menuitem id="menu_college_staff_academic"
+    groups= "winelands_college_base_module.winelands_group_root_hidden"
               name="Academic Staff"
         action="action_college_staff_academic"
               parent="college_menu" />
 
     <menuitem id="menu_college_staff_admin"
+    groups= "winelands_college_base_module.winelands_group_root_hidden"
               name="Admin Staff"
         action="action_college_staff_admin"
               parent="college_menu" />
 
     <menuitem id="menu_college_marks"
+    groups= "winelands_college_base_module.winelands_group_root_hidden"
               name="Marks"
         action="action_college_marks"
               parent="college_menu" />
-
 </odoo>
