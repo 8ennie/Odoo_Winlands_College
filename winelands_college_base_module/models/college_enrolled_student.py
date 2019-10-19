@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+import datetime
 
 class CollegeEnrolledStudent(models.Model):
     _name = 'college.enrolledstudent'
@@ -11,5 +12,5 @@ class CollegeEnrolledStudent(models.Model):
         ondelete='cascade')
     module_id = fields.Many2one('college.module', string = 'Module ID')
     #Attributes
-    year = fields.Integer('Year')
+    year = fields.Char('Year', size=4,default= str(datetime.datetime.now().year))
     mark = fields.Float('Mark')

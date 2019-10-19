@@ -11,7 +11,7 @@
             <field name="student_id" />
             <field name="module_id" />
             <field name="year" />
-            <field name="mark" />
+            <field name="mark"/>
           </group>
     </sheet>
       </form>

@@ -13,5 +13,5 @@ class CollegeModule(models.Model):
     #Attributes
     name = fields.Char('Name')
         #the time in quaters that the modules have (2 Quaters = 1 Semester)
-    time_frame = fields.Integer('Timeframe')
+    time_frame = fields.Integer('Timeframe',help="Number of Quaters the Module tackes \n ([2] => Two Quaters => One Semester)")
     credits = fields.Integer('Credits')
