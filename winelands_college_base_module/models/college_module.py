@@ -31,6 +31,12 @@ class CollegeModule(models.Model):
     time_frame = fields.Integer('Timeframe',help="Number of Quaters the Module tackes \n ([2] => Two Quaters => One Semester)")
     credits = fields.Integer('Credits')
 
+    @api.constrains('name')
+    def _check_name(self):
+          for value in self:
+            if not value.name:
+                raise ValidationError("The name field cannot be left empty")
+
     @api.constrains('time_frame')
     def _check_time_frame(self):
         for value in self:
@@ -44,8 +50,6 @@ class CollegeModule(models.Model):
         for value in self:
             if value.credits<=0:
                 raise ValidationError("The amount of credits may not be less then zero")
-
-
-
+            
     def getModule(self):
         return  [('True','=',True)]
