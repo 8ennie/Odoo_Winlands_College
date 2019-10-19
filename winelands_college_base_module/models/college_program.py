@@ -15,4 +15,4 @@ class CollegeProgram(models.Model):
     #Attributes
     name = fields.Char('Name')
     length = fields.Integer('Length')
-    qualification = fields.Char('Qualification')
+    qualification = fields.Selection([('',''),],string='Qualification')
