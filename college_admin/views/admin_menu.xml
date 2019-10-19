@@ -44,6 +44,16 @@
             groups="winelands_college_base_module.winelands_group_admin_staff"
       action="action_admin_department"
             parent="college_admin_menu" />
+  <menuitem id="menu_admin_program"
+            name="Program"
+            groups="winelands_college_base_module.winelands_group_admin_staff"
+      action="action_admin_program"
+            parent="college_admin_menu" />
+  <menuitem id="menu_admin_module"
+            name="Module"
+            groups="winelands_college_base_module.winelands_group_admin_staff"
+      action="action_admin_module"
+            parent="college_admin_menu" />
   <menuitem id="menu_admin_staff_admin"
             name="Admin Staff"
             groups="winelands_college_base_module.winelands_group_admin_staff"
@@ -58,15 +68,5 @@
             name="Students"
             groups="winelands_college_base_module.winelands_group_admin_staff"
       action="action_admin_student"
-            parent="college_admin_menu" />
-  <menuitem id="menu_admin_program"
-            name="Program"
-            groups="winelands_college_base_module.winelands_group_admin_staff"
-      action="action_admin_program"
-            parent="college_admin_menu" />
-  <menuitem id="menu_admin_module"
-            name="Module"
-            groups="winelands_college_base_module.winelands_group_admin_staff"
-      action="action_admin_module"
             parent="college_admin_menu" />
 </odoo>
