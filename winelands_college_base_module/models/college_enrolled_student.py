@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+from odoo.exceptions import ValidationError
 from odoo import models, fields, api
 import datetime
 
@@ -14,3 +14,13 @@ class CollegeEnrolledStudent(models.Model):
     #Attributes
     year = fields.Char('Year', size=4,default= str(datetime.datetime.now().year))
     mark = fields.Float('Mark')
+
+    @api.constrains('mark')
+    def _mark_validation(self):
+        for value in self:
+            if value.mark>100:
+                raise ValidationError("Mark may not be over 100, as it is a percentage")
+            if value.mark<0:
+                raise ValidationError("The mark may not be negitive")
+
+
