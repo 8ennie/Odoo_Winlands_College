@@ -9,6 +9,7 @@
     <sheet>
           <group>
             <field name="name" />
+            <field name="name" />
             <field name="time_frame" />
             <field name="credits" />
             <field name="module_students" widget="one2many">

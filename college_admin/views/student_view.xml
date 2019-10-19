@@ -11,7 +11,7 @@
             <field name="id" attrs="{'invisible' :[('id', '=', False)]}"/>
             <field name="name"/>
             <field name="email" attrs="{'invisible' :[('id', '=', False)]}"/>
-            <field name="student_program" />
+            <field name="program_id" />
             <field name="start_year" />
               <field name="student_modules" widget="one2many">
                   <tree editable="bottom">
@@ -35,7 +35,7 @@
     <field name="arch" type="xml">
       <tree>
         <field name="partner_id" />
-        <field name="student_program" />
+        <field name="program_id" />
         <field name="start_year" />
       </tree>
     </field>

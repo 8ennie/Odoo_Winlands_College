@@ -8,7 +8,7 @@ class CollegeDepartment(models.Model):
 
     #Relationships
     staff_id = fields.One2many('college.staff','department_id',
-    string = 'Department ID')
+    string = 'Staff ID')
     module_id = fields.One2many('college.module','department_id',
     string = 'Module ID')
 

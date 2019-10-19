@@ -12,7 +12,7 @@ class CollegeStudent(models.Model):
         ondelete='cascade',required=True)
     student_modules = fields.One2many('college.enrolledstudent','student_id',
     string = 'Module ID')
-    student_program = fields.Many2one('college.program', string = 'Program ID',
+    program_id = fields.Many2one('college.program', string = 'Program ID',
         ondelete='cascade')
 
     #Attributes

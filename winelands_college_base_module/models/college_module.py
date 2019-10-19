@@ -11,6 +11,8 @@ class CollegeModule(models.Model):
         string = 'Student ID')
     department_id = fields.Many2one('college.department', string = 'Department ID',
         ondelete='cascade')
+    program_id = fields.Many2one('college.program', string = 'Program ID',
+        ondelete='cascade')
 
     #Attributes
     name = fields.Char('Name')
