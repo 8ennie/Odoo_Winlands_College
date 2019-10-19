@@ -9,8 +9,8 @@
     <sheet>
           <group>
             <field name="name" />
-            <field name="staff_id" />
-            <field name="module_id" />
+            <field name="staff_id" attrs="{'invisible' :[('id', '=', False)], 'readonly': True}"/>
+            <field name="module_id" attrs="{'invisible' :[('id', '=', False)], 'readonly': True}"/>
           </group>
     </sheet>
       </form>
