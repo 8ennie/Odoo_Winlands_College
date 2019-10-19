@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+from odoo.exceptions import ValidationError
 from odoo import models, fields, api
 
 class CollegeDepartment(models.Model):
@@ -14,6 +14,12 @@ class CollegeDepartment(models.Model):
 
     #Attributes
     name = fields.Char('Name')
+    #checks
+    @api.constrains('name')
+    def _constrain_name_check(self):
+        for value in self:
+            if not value.name:
+                raise ValidationError("This field cannot be left empty")
 
     #computed
     amount_of_staff = fields.Integer(store=False, compute='_compute_number_of_staff')
