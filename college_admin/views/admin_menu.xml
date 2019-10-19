@@ -9,6 +9,18 @@
     res_model="college.department"
     view_mode="tree,form"
   />
+  <act_window id="action_admin_program"
+  groups="winelands_college_base_module.winelands_group_admin_staff"
+    name="College Program"
+    res_model="college.program"
+    view_mode="tree,form"
+  />
+  <act_window id="action_admin_module"
+  groups="winelands_college_base_module.winelands_group_admin_staff"
+    name="College Module"
+    res_model="college.module"
+    view_mode="tree,form"
+  />
   <act_window id="action_admin_staff_admin"
   groups="winelands_college_base_module.winelands_group_admin_staff"
     name="College Admin Staff"
@@ -25,18 +37,6 @@
   groups="winelands_college_base_module.winelands_group_admin_staff"
     name="College Students"
     res_model="college.student"
-    view_mode="tree,form"
-  />
-  <act_window id="action_admin_program"
-  groups="winelands_college_base_module.winelands_group_admin_staff"
-    name="College Program"
-    res_model="college.program"
-    view_mode="tree,form"
-  />
-  <act_window id="action_admin_module"
-  groups="winelands_college_base_module.winelands_group_admin_staff"
-    name="College Module"
-    res_model="college.module"
     view_mode="tree,form"
   />
   <menuitem id="menu_admin_department"
