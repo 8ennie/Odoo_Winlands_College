@@ -10,7 +10,6 @@
           <group>
             <field name="name" />
             <field name="department_id" />
-            <field name="program_id" />
             <field name="time_frame" />
             <field name="credits" />
             <field name="module_students" widget="one2many">
@@ -36,10 +35,11 @@
     <field name="model">college.module</field>
     <field name="arch" type="xml">
       <tree>
+        <field name="id" />
         <field name="name" />
-        <field name="program_id" />
         <field name="time_frame" />
         <field name="credits" />
+        <field name="amount_of_students" />
       </tree>
     </field>
   </record>

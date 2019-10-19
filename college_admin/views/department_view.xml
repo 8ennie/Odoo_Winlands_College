@@ -23,6 +23,7 @@
     <field name="arch" type="xml">
       <tree>
         <field name="name" />
+        <field name="amount_of_staff" />
       </tree>
     </field>
   </record>
