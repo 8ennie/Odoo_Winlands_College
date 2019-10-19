@@ -58,12 +58,7 @@
 <field name="groups" eval="[(4,ref('winelands_group_student'))]"/>
  </record>
  </data>
-<<<<<<< HEAD
 
 
 
 </odoo>
-=======
- 
-</odoo>
->>>>>>> de2284172e0759ee1788b0a794314a6ec28d50f6
