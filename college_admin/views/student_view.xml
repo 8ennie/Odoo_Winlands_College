@@ -37,6 +37,7 @@
         <field name="partner_id" />
         <field name="email"/>
         <field name="program_id" />
+        <field name="amount_of_credits" />
       </tree>
     </field>
   </record>
