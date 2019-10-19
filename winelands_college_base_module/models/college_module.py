@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+from odoo.exceptions import ValidationError
 from odoo import models, fields, api
 
 class CollegeModule(models.Model):
@@ -30,6 +30,15 @@ class CollegeModule(models.Model):
         #the time in quaters that the modules have (2 Quaters = 1 Semester)
     time_frame = fields.Integer('Timeframe',help="Number of Quaters the Module tackes \n ([2] => Two Quaters => One Semester)")
     credits = fields.Integer('Credits')
+
+    @api.constrains('time_frame')
+    def _check_time_frame(self):
+        for value in self:
+            if value.time_frame>4:
+                raise ValidationError("The module may not be longer then a year\nNumber of Quaters the Module tackes \n ([2] => Two Quaters => One Semester)")
+            if value.time_frame<0:
+                raise ValidationError("The time may not be less then 1 term")
+
 
 
     def getModule(self):
