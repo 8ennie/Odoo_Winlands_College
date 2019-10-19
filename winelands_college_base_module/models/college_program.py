@@ -9,7 +9,7 @@ class CollegeProgram(models.Model):
     #Relationships
     module_id = fields.One2many('college.module','program_id',
         string = 'Module ID')
-    module_id = fields.One2many('college.student','program_id',
+    student_id = fields.One2many('college.student','program_id',
         string = 'Student ID')
 
     #Attributes
