@@ -22,10 +22,9 @@ class CollegeStudent(models.Model):
 
     #DemieFields
 
-   @api.depends('student_modules')
+    @api.depends('student_modules')
     def _compute_credits(self):
-        for marks in college.student:
-            print(marks)
+        print("hey")
 
 
 
