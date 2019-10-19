@@ -19,4 +19,13 @@ class CollegeStaff(models.Model):
     @api.multi
     def getSatffEmail(self):
         for partner in self:
-            partner.staff_email = str(partner.name) + "@cwc.ac.za"
+            staff_email = str(partner.name) + "@cwc.ac.za"
+            __new_staff_email=""
+            for c in staff_email:
+                if c is " ":
+                    continue
+                __new_staff_email = __new_staff_email + c.lower()
+            __new_staff_email.replace(" ", "")
+            __new_staff_email.lower()
+            print(__new_staff_email)
+            partner.staff_email = __new_staff_email
