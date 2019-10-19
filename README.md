@@ -49,3 +49,6 @@ Big things:
 1. Make sure modules work independently 
 2. Be able to create and login as user and only see your respective information
 3. Make sure it works on a new odoo (as if Richard were to install)
+
+# Side Note
+- departments can only be linked with modules and staff from one way 
