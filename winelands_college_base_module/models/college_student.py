@@ -29,7 +29,6 @@ class CollegeStudent(models.Model):
                 student.amount_of_credits += marks.module_id.credits
                 print(marks.module_id.credits)
 
-
     @api.model
     def create(self, vals):
         vals['pType'] = "Student"
