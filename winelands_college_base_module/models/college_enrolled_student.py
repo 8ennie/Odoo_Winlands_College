@@ -10,7 +10,6 @@ class CollegeEnrolledStudent(models.Model):
     student_id = fields.Many2one('college.student', string = 'Student ID',
         ondelete='cascade')
     module_id = fields.Many2one('college.module', string = 'Module ID')
-
     #Attributes
     year = fields.Integer('Year')
     mark = fields.Float('Mark')
