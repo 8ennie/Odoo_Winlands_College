@@ -19,6 +19,5 @@ class CollegeAdminStaff(models.Model):
     @api.model
     def create(self, vals):
         vals['pType'] = "Admin"
-        super().create(vals)
         res = super().create(vals)
         return res

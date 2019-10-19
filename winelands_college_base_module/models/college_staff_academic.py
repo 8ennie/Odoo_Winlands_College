@@ -9,6 +9,8 @@ class CollegeAcademicStaff(models.Model):
     #Relationships
     partner_id = fields.Many2one('college.staff',delegate=True,
         ondelete='cascade',required=True)
+    lectured_classes = fields.One2many('college.lecturedclasses','acadenic_staff_id',
+    string = 'Lectured Classes ID')
 
     #Attributes
 
@@ -20,6 +22,5 @@ class CollegeAcademicStaff(models.Model):
     @api.model
     def create(self, vals):
         vals['pType'] = "Academic"
-        super().create(vals)
         res = super().create(vals)
         return res
