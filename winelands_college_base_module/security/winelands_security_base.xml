@@ -40,26 +40,22 @@
 
 <!-- Hidene Group (This is to hide the top value)-->
 <record id="winelands_group_root_hidden" model="res.groups">
-    <field name="name">Hide</field>
+    <field name="name">Admin Admin</field>
     <field name="category_id"
            ref="module_winelands_category"/>
     <field name="implied_ids"
            eval="[(4, ref('base.user_admin'))]"/>
 </record>
-
-
 <!--For dev mode we have changed the ubdate to 0, but it should be one-->
-<!--
+<!-- This is for vewing the students -->
 <data noupdate="0">
- <record id="book_user_rule" model="ir.rule">
+ <record id="Student_user_rule" model="ir.rule">
  <field name="name">Marks acsess rules</field>
- <field name="model_id" ref="XXX"/>
+ <field name="model_id" ref="model_college_student"/>
  <field name="domain_force">
- [('active','=',True)]
+ [('student_id.partner_id.user_ids.id','=',user.id)]
  </field>
-<field name="groups" eval="[(4,ref('library_group_user'))]"/>
+<field name="groups" eval="[(4,ref('winelands_group_student'))]"/>
  </record>
  </data>
--->
- 
 </odoo>
