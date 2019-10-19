@@ -31,7 +31,7 @@
       <tree>
         <field name="partner_id" />
         <field name="student_program" />
-        <field name="start_year" />
+        <field name="email" />
       </tree>
     </field>
   </record>
