@@ -35,10 +35,11 @@
     <field name="model">college.module</field>
     <field name="arch" type="xml">
       <tree>
-        <field name="id" />
         <field name="name" />
         <field name="time_frame" />
         <field name="credits" />
+        <field name="amount_of_students" />
+        <field name="program_id" />
       </tree>
     </field>
   </record>

@@ -16,6 +16,15 @@ class CollegeModule(models.Model):
     lectured_classes = fields.One2many('college.lecturedclasses','module_id',
         string = 'Lectured Classes ID')
 
+    #Computed Attributes
+    amount_of_students = fields.Integer(store=False, compute='_compute_number_of_students')
+
+    @api.depends("module_students")
+    def _compute_number_of_students(self):
+        for program in self:
+            for students in program.module_students:
+                program.amount_of_students += 1
+
     #Attributes
     name = fields.Char('Name')
         #the time in quaters that the modules have (2 Quaters = 1 Semester)
