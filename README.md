@@ -82,3 +82,7 @@ All fixed besides 10 and 11
 4.	How many students are in a module (module view in admin)
 5.	Remove white spaces from staff email (admin staff view in admin)
 6.	Add department to admin staff table (admin staff view in admin) 
+7.	Add program to module (module view in admin)
+8.	Add module to program (program view in admin)
+
+Fixed so far: 1,3,6,7 and 8
