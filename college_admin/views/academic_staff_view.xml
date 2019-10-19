@@ -10,6 +10,7 @@
           <group>
             <field name="id" attrs="{'invisible' :[('id', '=', False)]}"/>
             <field name="name"/>
+            <field name="department_id"/>
             <field name="email" attrs="{'invisible' :[('id', '=', False)]}"/>
           </group>
           <group attrs="{'invisible' :[('id', '!=', False)]}" >
@@ -25,7 +26,8 @@
     <field name="model">college.staff.academic</field>
     <field name="arch" type="xml">
       <tree>
-        <field name="partner_id" />
+        <field name="name" />
+        <field name="email" />
       </tree>
     </field>
   </record>

@@ -13,4 +13,9 @@ class CollegeStaff(models.Model):
         ondelete='cascade', required=True)
 
     #Attributes
-    staff_email = fields.Char('Staff Email Adress')
+    staff_email = fields.Char('Staff Email Adress', compute = 'getSatffEmail')
+
+    @api.depends('partner_id.name')
+    def getSatffEmail(self):
+        for partner in self:
+            partner.email = str(partner.name) + "@cwc.ac.za"
