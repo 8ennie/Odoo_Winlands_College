@@ -27,7 +27,6 @@ class CollegeStudent(models.Model):
         for student in self:
             for marks in student.student_modules:
                 student.amount_of_credits += marks.module_id.credits
-                print(marks.module_id.credits)
 
     @api.model
     def create(self, vals):
