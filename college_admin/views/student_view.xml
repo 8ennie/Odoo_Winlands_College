@@ -13,13 +13,13 @@
             <field name="email" attrs="{'invisible' :[('id', '=', False)]}"/>
             <field name="program_id" />
             <field name="start_year" />
-              <field name="student_modules" widget="one2many">
-                  <tree editable="bottom">
-                      <field name="module_id"/>
-                      <field name="year"/>
-                      <field name="mark"/>
-                  </tree>
-              </field>
+            <field name="student_modules" widget="one2many">
+                <tree editable="bottom">
+                    <field name="module_id"/>
+                    <field name="year"/>
+                    <field name="mark"/>
+                </tree>
+            </field>
           </group>
           <group attrs="{'invisible' :[('id', '!=', False)]}" >
             <field name="create_user"/>

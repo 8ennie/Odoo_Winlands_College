@@ -13,6 +13,8 @@ class CollegeModule(models.Model):
         ondelete='cascade')
     program_id = fields.Many2one('college.program', string = 'Program ID',
         ondelete='cascade')
+    lectured_classes = fields.One2many('college.lecturedclasses','module_id',
+        string = 'Lectured Classes ID')
 
     #Attributes
     name = fields.Char('Name')
