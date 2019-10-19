@@ -8,6 +8,7 @@
       <form string="Admin Staff">
     <sheet>
           <group>
+            <field name="title"/>
             <field name="id" attrs="{'invisible' :[('id', '=', False)]}"/>
             <field name="name"/>
             <field name="department_id"/>
