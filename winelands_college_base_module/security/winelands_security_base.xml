@@ -53,12 +53,10 @@
  <field name="name">Marks acsess rules</field>
  <field name="model_id" ref="model_college_enrolledstudent"/>
  <field name="domain_force">
-[('student_id.partner_id.user_ids.id','=',user.id)]
+       [('student_id.partner_id.user_ids.id','=',user.id)]
  </field>
 <field name="groups" eval="[(4,ref('winelands_group_student'))]"/>
  </record>
  </data>
-
-
-
+ 
 </odoo>

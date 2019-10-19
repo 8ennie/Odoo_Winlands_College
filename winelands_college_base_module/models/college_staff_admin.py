@@ -11,8 +11,6 @@ class CollegeAdminStaff(models.Model):
         ondelete='cascade',required=True)
 
     #Attributes
-
-
     #DemieFields
     person_type = fields.Char(default='Admin')
 
