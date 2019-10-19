@@ -73,3 +73,5 @@ Big things:
 10.	Look at search 
 11.	Students should only be able to see their own modules when logged in by a student 
 
+fixed:
+1, 2, 9
