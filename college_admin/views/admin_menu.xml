@@ -67,6 +67,6 @@
   <menuitem id="menu_admin_module"
             name="Module"
             groups="winelands_college_base_module.winelands_group_admin_staff"
-      action="action_admin_program"
+      action="action_admin_module"
             parent="college_admin_menu" />
 </odoo>

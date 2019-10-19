@@ -29,10 +29,7 @@
         # 'security/ir.model.access.csv',
         'views/results_menu.xml',
         # 'views/student_view.xml',
-        'views/program_view.xml',
-        'views/department_view.xml',
         'views/module_view.xml',
-        'views/staff_view.xml',
         'views/enrolled_student_view.xml',
     ],
     # only loaded in demonstration mode
