@@ -59,7 +59,7 @@
  </record>
  </data>
 
- <data noupdate="0">
+ <!--<data noupdate="0">
  <record id="Student_Model_rule" model="ir.rule">
  <field name="name">Student can only see module</field>
  <field name="model_id" ref="model_college_module"/>
@@ -79,7 +79,7 @@
  </field>
 <field name="groups" eval="[(4,ref('winelands_group_academic'))]"/>
  </record>
- </data>
+ </data>-->
 
 
 </odoo>
