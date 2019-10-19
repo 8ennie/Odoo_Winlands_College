@@ -51,14 +51,19 @@
 <data noupdate="0">
  <record id="Student_user_rule" model="ir.rule">
  <field name="name">Marks acsess rules</field>
- <field name="model_id" ref="model_college_student"/>
+ <field name="model_id" ref="model_college_enrolledstudent"/>
  <field name="domain_force">
- [('student_id.partner_id.user_ids.id','=',user.id)]
+       [('student_id.partner_id.user_ids.id','=',user.id)]
  </field>
 <field name="groups" eval="[(4,ref('winelands_group_student'))]"/>
  </record>
  </data>
+<<<<<<< HEAD
 
 
 
 </odoo>
+=======
+ 
+</odoo>
+>>>>>>> de2284172e0759ee1788b0a794314a6ec28d50f6

@@ -33,6 +33,7 @@
       <tree>
         <field name="name" />
         <field name="email" />
+        <field name="amount_of_lectured_classes" />
       </tree>
     </field>
   </record>

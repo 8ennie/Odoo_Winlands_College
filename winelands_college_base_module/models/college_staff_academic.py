@@ -13,12 +13,17 @@ class CollegeAcademicStaff(models.Model):
     string = 'Lectured Classes ID')
 
     #Attributes
-
+    #here
+    amount_of_modules_lectured = fields.Integer(store=False, compute='_classes_lectured')
 
     #DemieFields
 
-
-
+    @api.depends('lectured_classes')
+    def _classes_lectured(self):
+        for staff in self:
+            for classes in staff.lectured_classes:
+                for i in classes:
+                    staff.amount_of_modules_lectured += 1
     @api.model
     def create(self, vals):
         vals['pType'] = "Academic"
