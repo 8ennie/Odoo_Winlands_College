@@ -53,3 +53,23 @@ Big things:
 # Side Note
 - departments can only be linked with modules and staff from one way 
 - staff/admin get one snazy email because you cant have more than one login
+
+# Comments from testing 
+1.	Add title to admin staff
+2.	Change order of admin menu: 
+  •	Department 
+  •	Program 
+  •	Module 
+  •	Admin staff 
+  •	Academic staff 
+  •	Student 
+3.	Change list for qualification 
+4.	We want the staff email address to show 
+5.	Students: student table view, amount of modules + email address 
+6.	Academic staff: table view, amount of lectured classes 
+7.	Link lecturedclass with academic staff (both ways)
+8.	Make sure that college admin staff cannot see/edit marks 
+9.	In college_results in modules table, add a department column 
+10.	Look at search 
+11.	Students should only be able to see their own modules when logged in by a student 
+
