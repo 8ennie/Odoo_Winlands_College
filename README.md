@@ -73,5 +73,16 @@ Big things:
 10.	Look at search 
 11.	Students should only be able to see their own modules when logged in by a student 
 
-fixed:
-1, 2, 9
+All fixed besides 10 and 11
+
+# Comments from testing 2
+1.	Change qualification and length (program view in admin)
+2.	Change lectured class to lecturer (Module view in admin)
+3.	Remove DI from module (module view in admin) 
+4.	How many students are in a module (module view in admin)
+5.	Remove white spaces from staff email (admin staff view in admin)
+6.	Add department to admin staff table (admin staff view in admin) 
+7.	Add program to module (module view in admin)
+8.	Add module to program (program view in admin)
+
+Fixed so far: 1,3,6,7 and 8
