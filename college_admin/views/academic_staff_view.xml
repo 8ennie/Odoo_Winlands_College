@@ -12,6 +12,7 @@
             <field name="name"/>
             <field name="department_id"/>
             <field name="email" attrs="{'invisible' :[('id', '=', False)]}"/>
+            <field name="staff_email" attrs="{'invisible' :[('id', '=', False)]}"/>
             <field name="lectured_classes" widget="one2many">
               <tree editable="bottom">
                   <field name="module_id"/>

@@ -19,4 +19,4 @@ class CollegeStaff(models.Model):
     @api.multi
     def getSatffEmail(self):
         for partner in self:
-            partner.email = str(partner.name) + "@cwc.ac.za"
+            partner.staff_email = str(partner.name) + "@cwc.ac.za"

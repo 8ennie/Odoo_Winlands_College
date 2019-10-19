@@ -15,6 +15,16 @@ class CollegeDepartment(models.Model):
     #Attributes
     name = fields.Char('Name')
 
+    #computed
+    amount_of_staff = fields.Integer(store=False, compute='_compute_number_of_staff')
+
+    @api.depends('staff_id')
+    def _compute_number_of_staff(self):
+        for department in self:
+            for i in department.staff_id:
+                department.amount_of_staff +=1
+
+   
     def get_users(self):
         domain = ('user.id', 'in', [(2),(3)])
         return domain
