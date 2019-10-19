@@ -15,11 +15,16 @@ class CollegeStudent(models.Model):
     program_id = fields.Many2one('college.program', string = 'Program ID',
         ondelete='cascade')
 
+    amount_of_credits = fields.Integer(store=False, compute='_compute_credits')
+
     #Attributes
     start_year = fields.Char('Starting Year',size=4,default = str(datetime.datetime.now().year))
 
     #DemieFields
 
+    @api.depends('college.module')
+    def _compute_credits(self):
+        print("hey")
 
     @api.model
     def create(self, vals):
