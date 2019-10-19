@@ -13,4 +13,4 @@ class CollegeEnrolledStudent(models.Model):
     module_id = fields.Many2one('college.module', string = 'Module ID')
     #Attributes
     year = fields.Char('Year', size=4,default= str(datetime.datetime.now().year))
-    mark = fields.Float('Mark')
+    mark = fields.Float('Mark',groups='winelands_college_base_module.winelands_group_academic')

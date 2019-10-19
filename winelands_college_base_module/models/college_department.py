@@ -14,3 +14,7 @@ class CollegeDepartment(models.Model):
 
     #Attributes
     name = fields.Char('Name')
+
+    def get_users(self):
+        domain = ('user.id', 'in', [(2),(3)])
+        return domain
