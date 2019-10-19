@@ -9,6 +9,8 @@
     <sheet>
           <group>
             <field name="name" />
+            <field name="staff_id" />
+            <field name="module_id" />
           </group>
     </sheet>
       </form>

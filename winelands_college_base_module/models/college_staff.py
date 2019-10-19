@@ -9,6 +9,8 @@ class CollegeStaff(models.Model):
     #Relationships
     partner_id = fields.Many2one('res.partner',delegate=True,
         ondelete='cascade',required=True)
+    department_id = fields.Many2one('college.department', string = 'Department ID',
+        ondelete='cascade')
 
     #Attributes
     staff_email = fields.Char('Staff Email Adress')

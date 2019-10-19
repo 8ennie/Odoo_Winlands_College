@@ -9,6 +9,8 @@ class CollegeModule(models.Model):
     #Relationships
     module_students = fields.One2many('college.enrolledstudent','module_id',
         string = 'Student ID')
+    department_id = fields.Many2one('college.department', string = 'Department ID',
+        ondelete='cascade')
 
     #Attributes
     name = fields.Char('Name')
