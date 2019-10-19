@@ -31,6 +31,9 @@
         'views/module_view.xml',
         'views/student_view.xml',
         'views/academic_staff_view.xml',
+        'views/department_view.xml',
+        'views/program_view.xml',
+        'views/admin_staff_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
