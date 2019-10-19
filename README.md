@@ -52,3 +52,4 @@ Big things:
 
 # Side Note
 - departments can only be linked with modules and staff from one way 
+- staff/admin get one snazy email because you cant have more than one login
