@@ -39,6 +39,12 @@ class CollegeModule(models.Model):
             if value.time_frame<0:
                 raise ValidationError("The time may not be less then 1 term")
 
+    @api.constrains("credits")
+    def _check_credits(self):
+        for value in self:
+            if value.credits<=0:
+                raise ValidationError("The amount of credits may not be less then zero")
+
 
 
     def getModule(self):
