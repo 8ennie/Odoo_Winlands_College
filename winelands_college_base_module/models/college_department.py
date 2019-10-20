@@ -14,7 +14,9 @@ class CollegeDepartment(models.Model):
 
     #Attributes
     name = fields.Char('Name')
+    #
     #checks
+    
     @api.constrains('name')
     def _constrain_name_check(self):
         for value in self:
@@ -30,6 +32,7 @@ class CollegeDepartment(models.Model):
             for i in department.staff_id:
                 department.amount_of_staff +=1
 
+    _sql_constraints = [ ('name_must_be_unique','UNIQUE (name)', 'The department name already exists'), ]
    
     def get_users(self):
         domain = ('user.id', 'in', [(2),(3)])

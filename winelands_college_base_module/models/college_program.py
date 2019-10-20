@@ -35,4 +35,4 @@ class CollegeProgram(models.Model):
     def _check_valid(self):
         for value in self:
             if not value.qualification:
-                raise ValidationError("An option must be selected, select not applicable,if no option is available")
+                raise ValidationError("A Qualification must be selected, select not applicable, if no option is available")
