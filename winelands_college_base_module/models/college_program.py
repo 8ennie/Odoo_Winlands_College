@@ -26,7 +26,7 @@ class CollegeProgram(models.Model):
     def _check_length(self):
         for value in self:
             if value.length<=0:
-                raise ValidationError("The years may not be less zero")
+                raise ValidationError("The years(length) may not be less zero")
             if value.length>=10:
                 raise ValidationError("The program may not be longer then 10 years")
 
