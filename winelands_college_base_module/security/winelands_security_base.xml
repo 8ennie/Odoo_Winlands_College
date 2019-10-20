@@ -49,7 +49,7 @@
 <!--For dev mode we have changed the ubdate to 0, but it should be one-->
 <!-- This is for vewing the students -->
 <data noupdate="0">
- <record id="Student_user_rule" model="ir.rule">
+ <record id="Student_marks_rule" model="ir.rule">
  <field name="name">Marks acsess rules</field>
  <field name="model_id" ref="model_college_enrolledstudent"/>
  <field name="domain_force">
@@ -59,27 +59,39 @@
  </record>
  </data>
 
- <!--<data noupdate="0">
- <record id="Student_Model_rule" model="ir.rule">
+ <data noupdate="0">
+ <record id="Student_module_rule" model="ir.rule">
  <field name="name">Student can only see module</field>
  <field name="model_id" ref="model_college_module"/>
  <field name="domain_force">
-   [('module_students.student_id.parent_id.user_ids.id','=',user.id)]
+   [('module_students.student_id.partner_id.user_ids.id','=',user.id)]
  </field>
 <field name="groups" eval="[(4,ref('winelands_group_student'))]"/>
  </record>
  </data>
 
- <data noupdate="0">
- <record id="Academic_Class_rule" model="ir.rule">
+<data noupdate="0">
+ <record id="Academic_module_rule" model="ir.rule">
  <field name="name">Academic Staff can only see module from own department</field>
  <field name="model_id" ref="model_college_module"/>
  <field name="domain_force">
-   [('department_id.staff_id.parent_id.user_ids.id','=',user.parent_id.id)]
+   [('department_id.staff_id.partner_id.user_ids.id','=',user.id)]
  </field>
 <field name="groups" eval="[(4,ref('winelands_group_academic'))]"/>
  </record>
- </data>-->
+</data>
+
+<data noupdate="0">
+ <record id="Academic_marks_rule" model="ir.rule">
+ <field name="name">Academic Staff can only see marks from own department</field>
+ <field name="model_id" ref="model_college_enrolledstudent"/>
+ <field name="domain_force">
+   [('module_id.department_id.staff_id.partner_id.user_ids.id','=',user.id)]
+ </field>
+<field name="groups" eval="[(4,ref('winelands_group_academic'))]"/>
+ </record>
+</data>
+
 
 
 </odoo>

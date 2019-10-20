@@ -9,7 +9,13 @@
     <sheet>
           <group>
             <field name="name" />
-            <field name="module_id" />
+            <field name="module_id" widget="one2many">
+                <tree editable="bottom">
+                    <field name="name"/>
+                    <field name="time_frame"/>
+                    <field name="credits"/>
+                </tree>
+            </field>
             <field name="length" />
             <field name="qualification" />
           </group>
@@ -24,7 +30,6 @@
     <field name="arch" type="xml">
       <tree>
         <field name="name" />
-        <field name="module_id" />
         <field name="qualification" />
         <field name="length" />
       </tree>

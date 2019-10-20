@@ -12,6 +12,7 @@
             <field name="department_id" />
             <field name="time_frame" />
             <field name="credits" />
+            <field name="program_id" />
             <field name="module_students" widget="one2many">
                 <tree editable="bottom">
                     <field name="student_id"/>
