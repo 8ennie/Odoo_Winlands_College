@@ -42,7 +42,7 @@ class CollegeModule(models.Model):
         for value in self:
             if value.time_frame>4:
                 raise ValidationError("The module may not be longer then a year\nNumber of Quaters the Module tackes \n ([2] => Two Quaters => One Semester)")
-            if value.time_frame<0:
+            if value.time_frame<=0:
                 raise ValidationError("The time may not be less then 1 term")
 
     @api.constrains("credits")

@@ -26,11 +26,11 @@ class CollegeProgram(models.Model):
     def _check_length(self):
         for value in self:
             if value.length<=0:
-                raise ValidationError("The years(length) may not be less zero")
+                raise ValidationError("The years (length) may not be less zero")
             if value.length>=10:
                 raise ValidationError("The program may not be longer then 10 years")
 
-    qualification = fields.Selection([('NA','Not applicable'),('Higher Certificate','Higher Certificate'),('National Certificate','National Certificate'),('National Higher Certificate','National Higher Certificate'),('Advanced Certificate','Advanced Certificate'),('Diploma, Higher Diploma, National Diploma & Advanced Diploma','Diploma, Higher Diploma, National Diploma & Advanced Diploma'),('Baccalaureus Technologiae (B Tech)','Baccalaureus Technologiae (B Tech)'),('Bachelor’s Degree','Bachelor’s Degree'),('Postgraduate Certificate and Diploma','Postgraduate Certificate and Diploma'),('Honours Degree','Honours Degree'),('Magister Technologiae (M Tech)','Magister Technologiae (M Tech)'),('Master’s Degree','Master’s Degree'),('Doctor Technologiae (D Tech) and Doctoral Degree','Doctor Technologiae (D Tech) and Doctoral Degree')],string='Qualification')
+    qualification = fields.Selection([('NA','Not Applicable'),('Higher Certificate','Higher Certificate'),('National Certificate','National Certificate'),('National Higher Certificate','National Higher Certificate'),('Advanced Certificate','Advanced Certificate'),('Diploma, Higher Diploma, National Diploma & Advanced Diploma','Diploma, Higher Diploma, National Diploma & Advanced Diploma'),('Baccalaureus Technologiae (B Tech)','Baccalaureus Technologiae (B Tech)'),('Bachelor’s Degree','Bachelor’s Degree'),('Postgraduate Certificate and Diploma','Postgraduate Certificate and Diploma'),('Honours Degree','Honours Degree'),('Magister Technologiae (M Tech)','Magister Technologiae (M Tech)'),('Master’s Degree','Master’s Degree'),('Doctor Technologiae (D Tech) and Doctoral Degree','Doctor Technologiae (D Tech) and Doctoral Degree')],string='Qualification')
     @api.constrains("qualification")
     def _check_valid(self):
         for value in self:
