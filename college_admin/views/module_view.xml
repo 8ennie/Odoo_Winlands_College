@@ -20,11 +20,8 @@
                     <field name="mark"/>
                 </tree>
             </field>
-            <field name="lectured_classes" widget="one2many">
-              <tree editable="bottom">
-                  <field name="acadenic_staff_id"/>
-              </tree>
-            </field>
+            <field name="staff_ids" />
+
           </group>
     </sheet>
       </form>

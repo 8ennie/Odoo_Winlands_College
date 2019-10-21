@@ -9,8 +9,8 @@ class CollegeAcademicStaff(models.Model):
     #Relationships
     partner_id = fields.Many2one('college.staff',delegate=True,
         ondelete='cascade',required=True)
-    lectured_classes = fields.One2many('college.lecturedclasses','acadenic_staff_id',
-    string = 'Lectured Classes ID')
+    module_ids = fields.Many2many(comodel_name='college.module',
+        string = 'Modules Lectured')
 
     #Attributes
     #here
@@ -18,14 +18,15 @@ class CollegeAcademicStaff(models.Model):
 
     #DemieFields
 
-    @api.depends('lectured_classes')
-    def _classes_lectured(self):
-        for staff in self:
-            for classes in staff.lectured_classes:
-                for i in classes:
-                    staff.amount_of_modules_lectured += 1
     @api.model
     def create(self, vals):
         vals['pType'] = "Academic"
         res = super().create(vals)
         return res
+
+    @api.depends('module_ids')
+    def _classes_lectured(self):
+        for staff in self:
+            for classes in staff.module_ids:
+                for i in classes:
+                    staff.amount_of_modules_lectured += 1

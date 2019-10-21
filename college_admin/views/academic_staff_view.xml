@@ -13,11 +13,8 @@
             <field name="department_id"/>
             <field name="email" attrs="{'invisible' :[('id', '=', False)]}"/>
             <field name="staff_email" attrs="{'invisible' :[('id', '=', False)]}"/>
-            <field name="lectured_classes" widget="one2many">
-              <tree editable="bottom">
-                  <field name="module_id"/>
-              </tree>
-            </field>
+            <field name="module_ids" />
+
           </group>
           <group attrs="{'invisible' :[('id', '!=', False)]}" >
             <field name="create_user" />

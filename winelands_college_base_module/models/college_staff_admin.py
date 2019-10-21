@@ -12,7 +12,6 @@ class CollegeAdminStaff(models.Model):
 
     #Attributes
     #DemieFields
-    person_type = fields.Char(default='Admin')
 
     @api.model
     def create(self, vals):
