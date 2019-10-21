@@ -46,6 +46,10 @@
     <field name="implied_ids"
            eval="[(4, ref('base.user_admin'))]"/>
 </record>
+
+
+
+
 <!--For dev mode we have changed the update to 0, but it should be one-->
 <!-- This is for vewing the students -->
 <data noupdate="0">

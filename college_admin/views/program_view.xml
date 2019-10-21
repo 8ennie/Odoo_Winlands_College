@@ -9,15 +9,10 @@
     <sheet>
           <group>
             <field name="name" />
-            <field name="module_id" widget="one2many">
-                <tree editable="bottom">
-                    <field name="name"/>
-                    <field name="time_frame"/>
-                    <field name="credits"/>
-                </tree>
-            </field>
             <field name="length" />
             <field name="qualification" />
+            <field name="module_ids" widget="one2many"/>
+            <field name="student_id" widget="one2many"/>
           </group>
     </sheet>
       </form>

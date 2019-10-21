@@ -11,10 +11,10 @@ class CollegeModule(models.Model):
         string = 'Student ID')
     department_id = fields.Many2one('college.department', string = 'Department ID',
         ondelete='cascade')
-    program_id = fields.Many2one('college.program', string = 'Program ID',
-        ondelete='cascade')
     lectured_classes = fields.One2many('college.lecturedclasses','module_id',
         string = 'Lectured Classes ID')
+    program_ids = fields.Many2many(comodel_name='college.program',
+        string = 'Programs')
 
     #Computed Attributes
     amount_of_students = fields.Integer(store=False, compute='_compute_number_of_students')
@@ -50,6 +50,6 @@ class CollegeModule(models.Model):
         for value in self:
             if value.credits<=0:
                 raise ValidationError("The amount of credits may not be less then zero")
-            
+
     def getModule(self):
         return  [('True','=',True)]

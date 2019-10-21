@@ -7,14 +7,14 @@ class CollegeProgram(models.Model):
     _description = 'A class for different programes at winlands college'
 
     #Relationships
-    module_id = fields.One2many('college.module','program_id',
-        string = 'Module ID')
+    module_ids = fields.Many2many(comodel_name='college.module',
+        string = 'Modules')
     student_id = fields.One2many('college.student','program_id',
         string = 'Student ID')
 
     #Attributes
     name = fields.Char('Name')
-    
+
     @api.constrains('name')
     def _constrain_name_check(self):
         for value in self:

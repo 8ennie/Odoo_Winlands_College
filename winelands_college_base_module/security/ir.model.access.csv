@@ -26,6 +26,3 @@ access_collage_stafflist_admin,listofStaffAdmin,model_college_staff,winelands_gr
 access_collage_studentlist_student,studentListStudent,model_college_student,winelands_group_student,1,0,0,0
 access_collage_studentlist_academic,studentListStaff,model_college_student,winelands_group_academic,1,0,0,0
 access_collage_studentlist_admin,studentListAdmin,model_college_student,winelands_group_admin_staff,1,1,1,1
-
-
-
