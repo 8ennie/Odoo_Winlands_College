@@ -2,7 +2,8 @@
 from odoo.exceptions import ValidationError
 from odoo import models, fields, api
 import datetime
-from fpdf import FPDF
+#from fpdf import FPDF
+#from gtts import gTTS
 
 class CollegeEnrolledStudent(models.Model):
     _name = 'college.enrolledstudent'
@@ -31,7 +32,7 @@ class CollegeEnrolledStudent(models.Model):
     #     pdf.set_font("Arial", size=30)
     #     pdf.set_text_color(255,0,0)  
     #     pdf.cell(2, 10, txt= "Not for official purposes", ln=100, align = "l")
-    #     heading_text =  "wine lands collage academic record for student: " + str(id_wcw)
+    #     heading_text =  "Winelands college academic record for student: " + str(id_wcw)
     #     pdf.set_font("Arial", size=20)
     #     pdf.set_text_color(0,0,0) 
     #     pdf.cell(2, 20, txt=heading_text , ln=100, align = "l")
@@ -41,4 +42,12 @@ class CollegeEnrolledStudent(models.Model):
     #         pdf.cell(2, 10, txt= mark, ln=100, align = "l")
     #     pdf.output("Academic_Transcript_"+str(id_wcw)+".pdf")
     # create_pdf(['hey','hey'], 23)
+
+    # def create_audio(ist_of_results,id_wcw):
+    #     convert = "For sudent " + str(id_wcw) + " here are the results."
+    #     for i in ist_of_results:
+    #         convert+= " " + i + " "
+    #     tts = gTTS(text=convert, lang='en')
+    #     tts.save("audio.mp3")
+    #create_audio(['hey','hey'], 23)
 
