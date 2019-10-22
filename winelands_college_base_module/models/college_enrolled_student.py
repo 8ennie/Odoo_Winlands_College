@@ -2,8 +2,8 @@
 from odoo.exceptions import ValidationError
 from odoo import models, fields, api
 import datetime
-#from fpdf import FPDF
-#from gtts import gTTS
+# from fpdf import FPDF
+# from gtts import gTTS
 
 class CollegeEnrolledStudent(models.Model):
     _name = 'college.enrolledstudent'
@@ -16,7 +16,6 @@ class CollegeEnrolledStudent(models.Model):
     #Attributes
     year = fields.Char('Year', size=4,default= str(datetime.datetime.now().year))
     mark = fields.Float('Mark')
-
     
     @api.constrains('mark')
     def _mark_validation(self):
@@ -49,5 +48,5 @@ class CollegeEnrolledStudent(models.Model):
     #         convert+= " " + i + " "
     #     tts = gTTS(text=convert, lang='en')
     #     tts.save("audio.mp3")
-    #create_audio(['hey','hey'], 23)
+    # create_audio(['hey','hey'], 23)
 
