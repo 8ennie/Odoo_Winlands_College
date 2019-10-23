@@ -17,7 +17,6 @@
                 <tree editable="bottom">
                     <field name="student_id"/>
                     <field name="year"/>
-                    <field name="mark"/>
                 </tree>
             </field>
             <field name="staff_ids" />

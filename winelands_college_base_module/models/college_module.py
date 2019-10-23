@@ -7,8 +7,8 @@ class CollegeModule(models.Model):
     _description = 'A class for different modules at winlands college'
 
     #Relationships
-    module_students = fields.One2many('college.enrolledstudent','module_id',
-        string = 'Student ID')
+    module_students = fields.One2many('college.marks','module_id',
+        string = 'Studensts')
     department_id = fields.Many2one('college.department', string = 'Department ID',
         ondelete='cascade')
     staff_ids = fields.Many2many(comodel_name='college.staff.academic',

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from odoo.exceptions import ValidationError
 
 class CollegeStaff(models.Model):
     _name = 'college.staff'
@@ -29,3 +30,13 @@ class CollegeStaff(models.Model):
             __new_staff_email.lower()
             print(__new_staff_email)
             partner.staff_email = __new_staff_email
+
+    @api.constrains('department_id')
+    def _department_validation(self):
+        for staff in self:
+            is_in_department = False
+            for depStaff in staff.department_id.staff_id:
+                if self.env.user.partner_id.id is depStaff.partner_id.id:
+                    is_in_department = True
+            if not is_in_department:
+                raise ValidationError("You can only add Staff to your own Department!")

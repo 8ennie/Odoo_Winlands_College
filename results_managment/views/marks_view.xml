@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <odoo>
 
-  <record id="view_form_enrolledstudent" model="ir.ui.view">
+  <record id="view_form_marks" model="ir.ui.view">
     <field name="name">Marks Form</field>
-    <field name="model">college.enrolledstudent</field>
+    <field name="model">college.marks</field>
     <field name="arch" type="xml">
       <form string="Marks">
     <sheet>
@@ -18,9 +18,9 @@
     </field>
   </record>
 
-  <record id="view_tree_enrolledstudent" model="ir.ui.view">
+  <record id="view_tree_marks" model="ir.ui.view">
     <field name="name">Mark List</field>
-    <field name="model">college.enrolledstudent</field>
+    <field name="model">college.marks</field>
     <field name="arch" type="xml">
       <tree>
         <field name="student_id" />

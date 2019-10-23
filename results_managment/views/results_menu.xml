@@ -1,6 +1,6 @@
 <odoo>
   <menuitem id="college_results_menu"
-            name="College Results" 
+            name="College Results"
             groups="winelands_college_base_module.winelands_group_academic,winelands_college_base_module.winelands_group_student"
             />
   <act_window id="action_results_module"
@@ -16,7 +16,7 @@
   />
   <act_window id="action_results_mark"
     name="College Marks"
-    res_model="college.enrolledstudent"
+    res_model="college.marks"
     view_mode="tree,form"
   />
 

@@ -10,7 +10,7 @@ class CollegeStudent(models.Model):
     #Relationships
     partner_id = fields.Many2one('res.partner',delegate=True,
         ondelete='cascade',required=True)
-    student_modules = fields.One2many('college.enrolledstudent','student_id',
+    student_modules = fields.One2many('college.marks','student_id',
     string = 'Module ID')
     program_id = fields.Many2one('college.program', string = 'Program ID',
         ondelete='cascade')

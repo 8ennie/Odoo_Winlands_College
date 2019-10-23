@@ -11,7 +11,7 @@
             <field name="title"/>
             <field name="id" attrs="{'invisible' :[('id', '=', False)]}"/>
             <field name="name"/>
-            <field name="department_id"/>
+            <field name="department_id" />
             <field name="email" attrs="{'invisible' :[('id', '=', False)]}"/>
             <field name="staff_email" attrs="{'invisible' :[('id', '=', False)]}"/>
           </group>

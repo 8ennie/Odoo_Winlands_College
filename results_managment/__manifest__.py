@@ -30,7 +30,7 @@
         'views/results_menu.xml',
         # 'views/student_view.xml',
         'views/module_view.xml',
-        'views/enrolled_student_view.xml',
+        'views/marks_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
