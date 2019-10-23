@@ -14,9 +14,8 @@ class CollegeDepartment(models.Model):
 
     #Attributes
     name = fields.Char('Name')
-    #
-    #checks
     
+    #checks
     @api.constrains('name')
     def _constrain_name_check(self):
         for value in self:
