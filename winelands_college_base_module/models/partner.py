@@ -1,5 +1,7 @@
 from odoo import models, fields, api
-
+#This class  inherits from the partners class in order to:
+#   generate a new user with ID 
+#   Generate an email address using the DB id.
 class Partner(models.Model):
     _inherit = 'res.partner'
 

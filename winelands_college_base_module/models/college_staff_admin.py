@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-
+#This model....
+#
+#
 from odoo import models, fields, api
 
 class CollegeAdminStaff(models.Model):
