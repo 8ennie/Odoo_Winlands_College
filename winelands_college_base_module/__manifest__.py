@@ -27,7 +27,6 @@
     'data': [
         'security/winelands_security_base.xml',
         'security/ir.model.access.csv',
-        'views/college_menu.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
