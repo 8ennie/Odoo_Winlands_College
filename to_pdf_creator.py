@@ -1,5 +1,8 @@
 from fpdf import FPDF
 from gtts import gTTS
+import os
+# import urllib2
+from tempfile import TemporaryFile
 
 def create_pdf(list_of_results,id_wcw):
     pdf = FPDF(orientation='P', unit='mm', format='A4')
@@ -23,10 +26,21 @@ def create_audio(ist_of_results,id_wcw):
         convert+= " " + i + " "
     tts = gTTS(text=convert, lang='en')
     tts.save(str(id_wcw)+"_marks.mp3")
+
+def delete_used(id):
+    os.remove("Academic_Transcript_"+str(id)+".pdf")
+    os.remove(str(id)+"_marks.mp3")
 #Call this
+# def check_internet():
+#     try:
+#         urllib2.urlopen("http://www.google.com")
+#         return True
+#     except urllib2.URLError as err:
+#         return True
+
 create_pdf(['E&I\t\t75%','Maths\t\t60%', "CS\t\t60%", 'Looking at Andrew\t\t90%'],69)
 create_audio(['E&I\t\t75%','Maths\t\t60%', "CS\t\t60%", 'Looking at Andrew\t\t90%'],69)
-
+delete_used(69)
 
 
 
