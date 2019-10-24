@@ -22,15 +22,14 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'winelands_college_base_module'],
+    'depends': ['base', 'winelands_college_base_module', 'college_admin'],
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
         'views/results_menu.xml',
-        # 'views/student_view.xml',
         'views/module_view.xml',
         'views/marks_view.xml',
+        'views/student_transcript.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

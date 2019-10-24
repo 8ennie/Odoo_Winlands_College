@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<odoo>
+
+  <report
+      id="action_report_student_transcript"
+      name="results_managment.report_student_transcript"
+      model="college.student"
+      string="Transcript"
+      report_type="qweb-html"
+  />
+
+  <template id="report_student_transcript">
+      <t t-call="web.html_container">
+          <t t-foreach="docs" t-as="o">
+              <div class="header">
+                  <h1>Cape Winlands College</h1>
+              </div>
+              <div class="page">
+                  <h2>Transcript for <span t-field="o.name"/></h2>
+
+                  <t t-foreach="o.student_modules" t-as="marks">
+                    <p>This Student attended <t t-esc="marks.module_id.name"/> and got the Mark <t t-esc="marks.mark"/></p>
+                  </t>
+              </div>
+          </t>
+    </t>
+  </template>
+
+
+</odoo>
