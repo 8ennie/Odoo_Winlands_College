@@ -33,3 +33,7 @@ class CollegeStudent(models.Model):
         vals['pType'] = "Student"
         res = super().create(vals)
         return res
+
+    @api.multi
+    def button_download_transcript(self):
+        print("view_tree_student")
