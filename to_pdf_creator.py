@@ -10,7 +10,7 @@ def create_pdf(list_of_results,id_wcw):
     pdf.set_font("Arial", size=30)
     pdf.set_text_color(255,0,0)  
     pdf.cell(2, 10, txt= "Not for official purposes", ln=100, align = "l")
-    heading_text =  "wine lands collage academic record for student: " + str(id_wcw)
+    heading_text =  "Wine lands collage academic record for student: " + str(id_wcw)
     pdf.set_font("Arial", size=20)
     pdf.set_text_color(0,0,0) 
     pdf.cell(2, 20, txt=heading_text , ln=100, align = "l")
