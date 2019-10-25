@@ -11,8 +11,8 @@
             <field name="name" />
             <field name="length" />
             <field name="qualification" />
-            <field name="module_ids" widget="one2many"/>
-            <field name="student_id" widget="one2many"/>
+            <field name="module_ids"/>
+            <field name="student_id"/>
           </group>
     </sheet>
       </form>

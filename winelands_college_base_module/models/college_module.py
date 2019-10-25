@@ -26,10 +26,10 @@ class CollegeModule(models.Model):
                 program.amount_of_students += 1
 
     #Attributes
-    name = fields.Char('Name')
+    name = fields.Char('Name',required=True)
         #the time in quaters that the modules have (2 Quaters = 1 Semester)
     time_frame = fields.Integer('Timeframe',help="Number of Quaters the Module tackes \n ([2] => Two Quaters => One Semester)")
-    credits = fields.Integer('Credits')
+    credits = fields.Integer('Credits',required=True)
 
     @api.constrains('name')
     def _check_name(self):

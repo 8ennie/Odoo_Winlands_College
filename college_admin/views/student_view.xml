@@ -6,10 +6,6 @@
     <field name="model">college.student</field>
     <field name="arch" type="xml">
       <form string="Student">
-        <header>
-          <button name="button_download_transcript" type="object"
-            string="Download Transcript as MP3" class="oe_stat_button oe_read_only" icon="fa-download" />
-        </header>
         <sheet>
           <group>
             <field name="name"/>
@@ -41,6 +37,7 @@
     <field name="arch" type="xml">
       <tree>
         <field name="partner_id" />
+
         <field name="email"/>
         <field name="program_id" />
         <field name="amount_of_credits" />

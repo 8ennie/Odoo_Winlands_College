@@ -1,8 +1,8 @@
 <odoo>
   <menuitem id="college_results_menu"
-            name="College Results"
-            groups="winelands_college_base_module.winelands_group_academic,winelands_college_base_module.winelands_group_student"
-            />
+    name="College Results"
+    groups="winelands_college_base_module.winelands_group_academic,winelands_college_base_module.winelands_group_student"
+    />
   <act_window id="action_results_module"
     name="College Modules"
     res_model="college.module"
@@ -20,17 +20,23 @@
     view_mode="tree,form"
   />
 
+
   <menuitem id="menu_results_module"
-            name="Modules"
-      action="action_results_module"
-            parent="college_results_menu" />
+    name="Modules"
+    action="action_results_module"
+    parent="college_results_menu" />
   <menuitem id="menu_results_student"
-            name="Students"
-            groups="winelands_college_base_module.winelands_group_academic"
-      action="action_results_student"
-            parent="college_results_menu" />
+    name="Students"
+    groups="winelands_college_base_module.winelands_group_academic"
+    action="action_results_student"
+    parent="college_results_menu" />
   <menuitem id="menu_results_mark"
-            name="Marks"
-      action="action_results_mark"
-            parent="college_results_menu" />
+    name="Marks"
+    action="action_results_mark"
+    parent="college_results_menu" />
+  <menuitem id="menu_admin_only_student"
+    name="Print Transcript"
+    groups="winelands_college_base_module.winelands_group_student"
+    action="action_report_student_transcript"
+    parent="college_results_menu" />
 </odoo>
