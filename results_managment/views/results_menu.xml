@@ -27,7 +27,7 @@
     parent="college_results_menu" />
   <menuitem id="menu_results_student"
     name="Students"
-    groups="winelands_college_base_module.winelands_group_academic"
+    
     action="action_results_student"
     parent="college_results_menu" />
   <menuitem id="menu_results_mark"
