@@ -1,6 +1,6 @@
 # Odoo_Winlands_College
 The Odoo Project for Socio Informatics 354
-# Group Members:
+# GROUP MEMBERS:
 ## Andrew Prenter - 20456395
 ## Ayaaz
 ## Bennie Wiemamm - 23725648
@@ -9,7 +9,7 @@ The Odoo Project for Socio Informatics 354
 
 
 
-# --- Instructions for installing the database ---
+# --- INSTRUCTIONS ---
 ---------------------------------------------------
 # --- FEATURES ---
 ## Users + permissions:  
