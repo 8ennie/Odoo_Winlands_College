@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<odoo>
+  <record id="view_form_enrolledstudent" model="ir.ui.view">
+    <field name="name">Marks Form</field>
+    <field name="model">college.enrolledstudent</field>
+    <field name="arch" type="xml">
+      <form string="Marks">
+    <sheet>
+          <group>
+            <field name="student_id" />
+            <field name="module_id" />
+            <field name="year" />
+            <field name="mark"/>
+          </group>
+    </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_tree_enrolledstudent" model="ir.ui.view">
+    <field name="name">Mark List</field>
+    <field name="model">college.enrolledstudent</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="student_id" />
+        <field name="module_id" />
+        <field name="year" />
+        <field name="mark" />
+      </tree>
+    </field>
+  </record>
+</odoo>
