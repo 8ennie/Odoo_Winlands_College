@@ -2,6 +2,10 @@
 
 from odoo import models, fields, api
 import datetime
+from gtts import gTTS
+from tempfile import TemporaryFile
+import os
+
 
 class CollegeStudent(models.Model):
     _name = 'college.student'
@@ -13,7 +17,7 @@ class CollegeStudent(models.Model):
     student_modules = fields.One2many('college.marks','student_id',
     string = 'Module ID')
     program_id = fields.Many2one('college.program', string = 'Program ID',
-        ondelete='cascade')
+        ondelete='cascade',required=True)
 
     amount_of_credits = fields.Integer(store=False, compute='_compute_credits')
 
@@ -33,7 +37,3 @@ class CollegeStudent(models.Model):
         vals['pType'] = "Student"
         res = super().create(vals)
         return res
-
-    @api.multi
-    def button_download_transcript(self):
-        print("view_tree_student")

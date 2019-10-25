@@ -9,9 +9,6 @@ class Partner(models.Model):
 
     #Attributes
     email = fields.Char(compute='_compute_email');
-    bod = fields.Date(string= "Date of Birth")
-    first_name = fields.Char(string="First Names")
-
 
     #DemieFields
     create_user = fields.Boolean(store=False, default=True, string="Do You want to create a User")

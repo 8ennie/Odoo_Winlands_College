@@ -10,10 +10,10 @@ class CollegeProgram(models.Model):
     module_ids = fields.Many2many(comodel_name='college.module',
         string = 'Modules')
     student_id = fields.One2many('college.student','program_id',
-        string = 'Student ID')
+        string = 'Students')
 
     #Attributes
-    name = fields.Char('Name')
+    name = fields.Char('Name',required=True)
 
     @api.constrains('name')
     def _constrain_name_check(self):

@@ -30,7 +30,7 @@
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml'
-        'data/partner_demo.xml',
+        'demo/demo.xml',
+        'data/partner_data.xml',
     ],
 }

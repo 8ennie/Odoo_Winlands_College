@@ -94,13 +94,17 @@
 </data>
 
 <data noupdate="0">
- <record id="Admin_department_rule" model="ir.rule">
- <field name="name">Admin Staff can only Chnages Stuff in there Department</field>
- <field name="model_id" ref="model_college_department"/>
- <field name="domain_force">
-   [('staff_id.partner_id.user_ids.id','=',user.id)]
- </field>
-<field name="groups" eval="[(4,ref('winelands_group_admin_staff'))]"/>
+ <record id="Admin_staff_rule" model="ir.rule">
+   <field name="name">Admin Staff can only Chnages Stuff in there Department</field>
+   <field name="model_id" ref="model_college_staff"/>
+   <field name="domain_force">
+     [('department_id.staff_id.partner_id.user_ids.id','=',user.id)]
+   </field>
+   <field name="groups" eval="[(4,ref('winelands_group_admin_staff'))]"/>
+   <field name="perm_read">False</field>
+   <field name="perm_write">True</field>
+   <field name="perm_create">True</field>
+   <field name="perm_unlink">True</field>
  </record>
 </data>
 

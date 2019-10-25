@@ -13,8 +13,8 @@ class CollegeEnrolledStudent(models.Model):
 
     #Relationships
     student_id = fields.Many2one('college.student', string = 'Student ID',
-        ondelete='cascade')
-    module_id = fields.Many2one('college.module', string = 'Module ID')
+        ondelete='cascade',required=True)
+    module_id = fields.Many2one('college.module', string = 'Module ID',required=True)
 
     #Attributes
     compued_name = fields.Char(compute = 'compute_name_for_enrolled_student',store=False)
