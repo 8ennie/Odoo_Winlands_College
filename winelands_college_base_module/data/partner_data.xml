@@ -2,11 +2,18 @@
 <odoo>
     <data noupdate="1">
         <record id="1" model="college.department">
-            <field name="name">Engineering</field>
+            <field name="name">Science</field>
         </record>
         <record id="1" model="college.staff.academic">
             <field name="name">Test</field>
             <field name="department_id">1</field>
+        </record>
+        <record id="1" model="college.student">
+            <field name="name">Bobo</field>
+            <field name="program_id">1</field>
+        </record>
+        <record id="1" model="college.program">
+            <field name="name">Socio Infomatics</field>
         </record>
     </data>
 </odoo>
