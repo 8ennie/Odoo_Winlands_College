@@ -9,9 +9,9 @@ Tomas Hegewisch - 21071926
 
 
 
-# Instructions for installing the database
+# --- Instructions for installing the database ---
 
-# FEATURES
+# --- FEATURES ---
 ## Users + permissions:  
 1. Academic Staff User: 
  - Username: namesurname extended by “@cwc.ac.za”
