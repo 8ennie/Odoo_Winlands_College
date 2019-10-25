@@ -19,7 +19,7 @@ class CollegeEnrolledStudent(models.Model):
     #Attributes
     compued_name = fields.Char(compute = 'compute_name_for_enrolled_student',store=False)
     year = fields.Char('Year', size=4,default= str(datetime.datetime.now().year))
-    #_sql_constraints = [ ('Module_and_year_unique','UNIQUE (module_id,year)', 'This module and the year need to be unique'), ]
+    _sql_constraints = [ ('Module_and_year_unique','UNIQUE (module_id,year,student_id)', 'This module and the year need to be unique'), ]
 
     @api.depends('student_id')
     def compute_name_for_enrolled_student(self):
