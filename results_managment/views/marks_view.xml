@@ -37,6 +37,10 @@
          <search string="Search Marks">
              <field name="module_id"/>
              <filter string="Current Year" domain="[('year','in',['2019'])]" name= "filter_current_year"/>
+             <filter string="Passed" domain="[('mark','>',50)]" name= "filter_staff_teaches" groups="winelands_college_base_module.winelands_group_student"/>
+             <filter string="Failed" domain="['&amp;',('mark','&lt;',50),('mark','!=',None)]" name= "filter_staff_teaches" groups="winelands_college_base_module.winelands_group_student"/>
+             <filter string="No Mark Yet" domain="[('mark','=',None)]" name= "filter_staff_teaches" />
+             <filter string="Gotten A Mark" domain="[('mark','!=',None)]" name= "filter_staff_teaches" />
          </search>
      </field>
   </record>

@@ -43,4 +43,16 @@
       </tree>
     </field>
   </record>
+
+  <record id="view_search_student" model="ir.ui.view">
+     <field name="name">Student Search View</field>
+     <field name="model">college.student</field>
+     <field name="arch" type="xml">
+         <search string="Search Student">
+             <field name="name"/>
+             <filter string="In My Department" domain="[('student_modules.module_id.department_id.staff_id.partner_id.user_ids.id','=',uid)]" name= "filter_staff_department" groups="winelands_college_base_module.winelands_group_academic"/>
+             <filter string="I am Teaching" domain="[('student_modules.module_id.staff_ids.partner_id.user_ids.id','=',uid)]" name= "filter_staff_teaches" groups="winelands_college_base_module.winelands_group_academic"/>
+         </search>
+     </field>
+  </record>
 </odoo>

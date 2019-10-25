@@ -34,7 +34,8 @@
         'views/department_view.xml',
         'views/program_view.xml',
         'views/admin_staff_view.xml',
-        'views/current_class_list.xml'
+        'views/current_class_list.xml',
+        'views/staff_view.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

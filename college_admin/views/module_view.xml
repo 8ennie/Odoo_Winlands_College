@@ -40,4 +40,17 @@
       </tree>
     </field>
   </record>
+
+  <record id="view_search_module" model="ir.ui.view">
+     <field name="name">Module Search View</field>
+     <field name="model">college.module</field>
+     <field name="arch" type="xml">
+         <search string="Module Marks">
+             <field name="name" />
+             <filter string="I am Teaching" domain="[('staff_ids.partner_id.user_ids.id','=',uid)]" name= "filter_staff_teaches" groups="winelands_college_base_module.winelands_group_academic"/>
+             <filter string="Attended this Year" domain="[('module_students.year','=','2019')]" name= "filter_staff_teaches" />
+         </search>
+     </field>
+  </record>
+
 </odoo>

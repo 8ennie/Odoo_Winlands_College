@@ -27,9 +27,7 @@ class CollegeEnrolledStudent(models.Model):
     @api.constrains("year")
     def check_the_year(self):
         for value in self:
-            print(len(value.year))
             if len(value.year)!= 4:
                 raise ValidationError("This is not an appropriate year")
             if(int(value.year)-int(datetime.datetime.now().year)>5):
                 raise ValidationError("The date is greater then 5 year from the current date")
-

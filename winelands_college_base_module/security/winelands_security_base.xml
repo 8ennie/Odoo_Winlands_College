@@ -73,10 +73,10 @@
 
 <data noupdate="0">
  <record id="Academic_module_rule" model="ir.rule">
- <field name="name">Academic Staff can only see module from own department</field>
+ <field name="name">Academic Staff can only see module from own department or that they teach</field>
  <field name="model_id" ref="model_college_module"/>
  <field name="domain_force">
-   [('department_id.staff_id.partner_id.user_ids.id','=',user.id)]
+   ['|',('department_id.staff_id.partner_id.user_ids.id','=',user.id), ('staff_ids.partner_id.user_ids.id','=',user.id)]
  </field>
 <field name="groups" eval="[(4,ref('winelands_group_academic'))]"/>
  </record>
@@ -84,10 +84,10 @@
 
 <data noupdate="0">
  <record id="Academic_marks_rule" model="ir.rule">
- <field name="name">Academic Staff can only see marks from own department</field>
+ <field name="name">Academic Staff can only see marks from own department or from modules they teach</field>
  <field name="model_id" ref="model_college_enrolledstudent"/>
  <field name="domain_force">
-   [('module_id.department_id.staff_id.partner_id.user_ids.id','=',user.id)]
+   ['|',('module_id.department_id.staff_id.partner_id.user_ids.id','=',user.id), ('module_id.staff_ids.partner_id.user_ids.id','=',user.id)]
  </field>
 <field name="groups" eval="[(4,ref('winelands_group_academic'))]"/>
  </record>

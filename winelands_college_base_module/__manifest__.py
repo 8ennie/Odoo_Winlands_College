@@ -30,13 +30,11 @@
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
-        'data/acadmic_data.xml',
-        'data/admin_data.xml',
-        'data/department_data.xml',
-        'data/module_data.xml',
-        'data/program_data.xml',
-        'data/student_data.xml',
-        'data/partner_data.xml',
+        'data/college.department.csv',
+        'data/college.program.csv',
+        'data/college.module.csv',
+        'data/college.staff.academic.csv',
+        'data/college.staff.admin.csv',
+        'data/college.student.csv',
     ],
 }
