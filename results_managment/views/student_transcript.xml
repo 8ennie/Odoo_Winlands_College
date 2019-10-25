@@ -6,7 +6,7 @@
       name="results_managment.report_student_transcript"
       model="college.student"
       string="Transcript"
-      report_type="qweb-html"
+      report_type="qweb-pdf"
   />
 
   <template id="report_student_transcript">
@@ -19,28 +19,10 @@
                   <h2>Transcript for <span t-field="o.name"/></h2>
                   <t t-foreach="o.student_modules" t-as="marks">
                     <p>This Student attended <t t-esc="marks.module_id.name"/> and got the Mark <t t-esc="marks.mark"/></p>
-                    <a t-attf-href="/web/binary/saveas?model=college.student&amp;field=transcript_mp3_file&amp;filename_field=name&amp;id={{ o.id }}">Download</a>
                   </t>
               </div>
           </t>
     </t>
   </template>
-  <template id="index" name="Website Downloads Index">
-        <t t-call="web.html_container">
-            <div id="wrap" style="margin-top:50px;margin-bottom:50px">
-                <div class="container text-center">
-                    <table class="table table-striped">
-                      <t t-foreach="doc" t-as="f">
-                          <tr>
-                              <td><t t-esc="f.name"/></td>
-                              <td><a t-attf-href="/web/binary/saveas?model=college.student&amp;field=transcript_mp3_file&amp;filename_field=name&amp;id={{ f.id }}">Download</a></td>
-                          </tr>
-                      </t>
-                    </table>
-
-                </div>
-            </div>
-        </t>
-    </template>
 
 </odoo>

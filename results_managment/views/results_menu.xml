@@ -34,9 +34,9 @@
     name="Marks"
     action="action_results_mark"
     parent="college_results_menu" />
-  <menuitem id="menu_admin_only_student"
+  <!-- <menuitem id="menu_admin_only_student"
     name="Print Transcript"
     groups="winelands_college_base_module.winelands_group_student"
     action="action_report_student_transcript"
-    parent="college_results_menu" />
+    parent="college_results_menu" /> -->
 </odoo>

@@ -1,6 +1,6 @@
 from odoo import models, fields, api
 #This class  inherits from the partners class in order to:
-#   generate a new user with ID 
+#   generate a new user with ID
 #   Generate an email address using the DB id.
 class Partner(models.Model):
     _inherit = 'res.partner'
@@ -16,7 +16,6 @@ class Partner(models.Model):
 
     @api.model
     def create(self, vals):
-        print(vals)
         res = super().create(vals)
         if vals['create_user'] is True:
             user = self.env['res.users'].create({'login' : res.email,'password' : "password",'partner_id' : res.id})
