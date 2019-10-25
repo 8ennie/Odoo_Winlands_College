@@ -37,6 +37,6 @@
         'data/module_data.xml',
         'data/program_data.xml',
         'data/student_data.xml',
-        #'data/partner_data.xml',
+        'data/partner_data.xml',
     ],
 }
