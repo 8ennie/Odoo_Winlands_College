@@ -19,12 +19,12 @@ class CollegeEnrolledStudent(models.Model):
     #Attributes
     compued_name = fields.Char(compute = 'compute_name_for_enrolled_student',store=False)
     year = fields.Char('Year', size=4,default= str(datetime.datetime.now().year))
+    #_sql_constraints = [ ('Module_and_year_unique','UNIQUE (module_id,year)', 'This module and the year need to be unique'), ]
 
     @api.depends('student_id')
     def compute_name_for_enrolled_student(self):
         for enrolledstudent in self:
             enrolledstudent.compued_name = enrolledstudent.student_id.name + " in " + enrolledstudent.module_id.name
-
     # def create_pdf(list_of_results,id_wcw):
     #     pdf = FPDF(orientation='P', unit='mm', format='A4')
     #     pdf.add_page()
