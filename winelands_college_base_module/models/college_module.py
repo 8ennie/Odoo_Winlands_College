@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 from odoo.exceptions import ValidationError
 from odoo import models, fields, api
-
+#
+#
+#
+#
 class CollegeModule(models.Model):
     _name = 'college.module'
     _description = 'A class for different modules at winlands college'
