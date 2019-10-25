@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<odoo>
+
+  <report
+      id="action_current_class_list"
+      name="college_admin.report_current_class_list"
+      model="college.module"
+      string="Current Class List"
+      report_type="qweb-pdf"
+  />
+
+  <template id="report_current_class_list">
+      <t t-call="web.html_container">
+          <t t-foreach="docs" t-as="o">
+              <div class="header">
+                  <h1>Cape Winlands College</h1>
+              </div>
+              <div class="page">
+                  <h2>Module Student List for <span t-field="o.name"/> in 2019 </h2>
+                  <t t-foreach="o.module_students" t-as="marks">
+                    <t t-if="marks.year == '2019'">
+                      <p> <t t-esc="marks.student_id.name"/> has the Mark <t t-esc="marks.mark"/></p>
+                    </t>
+                  </t>
+              </div>
+          </t>
+    </t>
+  </template>
+
+</odoo>

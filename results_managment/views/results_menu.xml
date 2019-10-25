@@ -17,7 +17,7 @@
   <act_window id="action_results_mark"
     name="College Marks"
     res_model="college.marks"
-    view_mode="tree,form"
+    view_mode="tree,form,search"
   />
 
 
@@ -27,7 +27,7 @@
     parent="college_results_menu" />
   <menuitem id="menu_results_student"
     name="Students"
-    
+
     action="action_results_student"
     parent="college_results_menu" />
   <menuitem id="menu_results_mark"

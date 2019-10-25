@@ -29,4 +29,16 @@
       </tree>
     </field>
   </record>
+
+  <record id="view_search_marks" model="ir.ui.view">
+     <field name="name">Marks Search View</field>
+     <field name="model">college.marks</field>
+     <field name="arch" type="xml">
+         <search string="Search Marks">
+             <field name="module_id"/>
+             <filter string="Current Year" domain="[('year','in',['2019'])]" name= "filter_current_year"/>
+         </search>
+     </field>
+  </record>
+
 </odoo>
