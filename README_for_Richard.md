@@ -47,14 +47,14 @@ Students are provided their own computed login number from the server. This numb
 2. Admin staff user:
  - Click on College Admin module
  - Click on Admin Staff listed in the header 
-•	Select the button create 
-•	Fill in the respective fields 
+ - Select the button create 
+ - Fill in the respective fields 
  
 3.	Student user:
-•	Click on College Admin module
-•	Click on Admin Staff listed in the header 
-•	Select the button create 
-•	Fill in the respective fields 
+ - Click on College Admin module
+ - Click on Admin Staff listed in the header 
+ - Select the button create 
+ - Fill in the respective fields 
 
 ## Students can only see their own marks
  
