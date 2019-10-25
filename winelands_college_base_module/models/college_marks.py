@@ -1,5 +1,5 @@
 from odoo import models, fields, api
-
+from odoo.exceptions import ValidationError
 class CollegeMarks(models.Model):
     _name = 'college.marks'
     _description = 'A class for Student Marks at winelands college'
