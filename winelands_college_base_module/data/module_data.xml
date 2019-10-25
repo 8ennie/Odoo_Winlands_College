@@ -1,0 +1,300 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="1">
+------Human Life science
+        <record id="1" model="college.module">
+            <field name="name">Chemistry 101</field>
+            <field name="time_frame">2</field>
+            <field name="credits">8</field>
+            <field name="program_id">2</field>
+        </record>
+        <record id="2" model="college.module">
+            <field name="name">Chemistry 102</field>
+            <field name="time_frame">2</field>
+            <field name="credits">8</field>
+            <field name="program_id">2</field>
+        </record>
+        <record id="3" model="college.module">
+            <field name="name">Chemistry 200</field>
+            <field name="time_frame">4</field>
+            <field name="credits">16</field>
+            <field name="program_id">2</field>
+        </record>
+        <record id="4" model="college.module">
+            <field name="name">Chemistry 300</field>
+            <field name="time_frame">4</field>
+            <field name="credits">16</field>
+            <field name="program_id">2</field>
+        </record>
+        <record id="5" model="college.module">
+            <field name="name">Biology 100</field>
+            <field name="time_frame">4</field>
+            <field name="credits">16</field>
+            <field name="program_id">2</field>
+        </record>
+        <record id="6" model="college.module">
+            <field name="name">Biology 200</field>
+            <field name="time_frame">4</field>
+            <field name="credits">16</field>
+            <field name="program_id">2</field>
+        </record>
+        <record id="7" model="college.module">
+            <field name="name">Biology 300</field>
+            <field name="time_frame">4</field>
+            <field name="credits">16</field>
+            <field name="program_id">2</field>
+        </record>
+------Accounting
+      <record id="8" model="college.module">
+          <field name="name">Accounting 100</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">3</field>
+      </record>
+      <record id="9" model="college.module">
+          <field name="name">Accounting 300</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">3</field>
+      </record>
+      <record id="10" model="college.module">
+          <field name="name">Accounting 300</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">2</field>
+      </record>
+      <record id="11" model="college.module">
+          <field name="name">Eccomics 100</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">3</field>
+      </record>
+      <record id="12" model="college.module">
+          <field name="name">Ecconmics 200</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">3</field>
+      </record>
+      <record id="13" model="college.module">
+          <field name="name">Eccomics 300</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">3</field>
+      </record>
+------Socio Informatics
+      <record id="14" model="college.module">
+          <field name="name">Information Systems 100</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">1</field>
+      </record>
+      <record id="15" model="college.module">
+          <field name="name">Information Systems 200</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">1</field>
+      </record>
+      <record id="16" model="college.module">
+          <field name="name">Information Systems 300</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">1</field>
+      </record>
+      <record id="17" model="college.module">
+          <field name="name">Computer Science 100</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">1</field>
+      </record>
+      <record id="18" model="college.module">
+          <field name="name">Computer Science 200</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">1</field>
+      </record>
+      <record id="19" model="college.module">
+          <field name="name">Computer Science 300</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">1</field>
+      </record>
+------LLB
+      <record id="20" model="college.module">
+          <field name="name">Criminal Law 100</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">4</field>
+      </record>
+      <record id="21" model="college.module">
+          <field name="name">Criminal Law 200</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">4</field>
+      </record>
+      <record id="22" model="college.module">
+          <field name="name">Criminal Law 300</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">4</field>
+      </record>
+      <record id="23" model="college.module">
+          <field name="name">Criminal Law 400</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">4</field>
+      </record>
+      <record id="24" model="college.module">
+          <field name="name">Commerce Law 200</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">4</field>
+      </record>
+      <record id="25" model="college.module">
+          <field name="name">Commerce Law 300</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">4</field>
+      </record>
+      <record id="26" model="college.module">
+          <field name="name">Commerce Law 400</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">4</field>
+      </record>
+------Food Science
+      <record id="27" model="college.module">
+          <field name="name">Biochemistry 100</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">5</field>
+      </record>
+      <record id="28" model="college.module">
+          <field name="name">Biochemistry 200</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">5</field>
+      </record>
+      <record id="29" model="college.module">
+          <field name="name">Biochemistry 300</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">5</field>
+      </record>
+      <record id="30" model="college.module">
+          <field name="name">Biochemistry 400</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">5</field>
+      </record>
+      <record id="31" model="college.module">
+          <field name="name">Food Science 100</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">5</field>
+      </record>
+      <record id="32" model="college.module">
+          <field name="name">Food Science 200</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">5</field>
+      </record>
+      <record id="33" model="college.module">
+          <field name="name">Food Science 300</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">5</field>
+      </record>
+      <record id="34" model="college.module">
+          <field name="name">Food Science 400</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">5</field>
+      </record>
+------Linguistics
+      <record id="35" model="college.module">
+          <field name="name">Ancient Languages 100</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">6</field>
+      </record>
+      <record id="36" model="college.module">
+          <field name="name">Ancient Languages 200</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">6</field>
+      </record>
+      <record id="37" model="college.module">
+          <field name="name">Ancient Languages 300</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">6</field>
+      </record>
+      <record id="38" model="college.module">
+          <field name="name">Ancient Languages 400</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">6</field>
+      </record>
+      <record id="49" model="college.module">
+          <field name="name">Modern Languages 100</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">6</field>
+      </record>
+      <record id="41" model="college.module">
+          <field name="name">Modern Languages 200</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">6</field>
+      </record>
+      <record id="42" model="college.module">
+          <field name="name">Modern Languages 300</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">6</field>
+      </record>
+      <record id="43" model="college.module">
+          <field name="name">Modern Languages 400</field>
+          <field name="time_frame">4</field>
+          <field name="credits">16</field>
+          <field name="program_id">6</field>
+      </record>
+------Sustainable Development
+      <record id="44" model="college.module">
+          <field name="name">Development Planning</field>
+          <field name="time_frame">1</field>
+          <field name="credits">6</field>
+          <field name="program_id">7</field>
+      </record>
+      <record id="45" model="college.module">
+          <field name="name">Food Development</field>
+          <field name="time_frame">1</field>
+          <field name="credits">6</field>
+          <field name="program_id">7</field>
+      </record>
+      <record id="46" model="college.module">
+          <field name="name">Food Development II</field>
+          <field name="time_frame">1</field>
+          <field name="credits">6</field>
+          <field name="program_id">7</field>
+      </record>
+      <record id="47" model="college.module">
+          <field name="name">Sustainable Energy</field>
+          <field name="time_frame">1</field>
+          <field name="credits">6</field>
+          <field name="program_id">7</field>
+      </record>
+      <record id="48" model="college.module">
+          <field name="name">Sustainable Energy II</field>
+          <field name="time_frame">1</field>
+          <field name="credits">6</field>
+          <field name="program_id">7</field>
+      </record>
+      <record id="49" model="college.module">
+          <field name="name">Development Planning II</field>
+          <field name="time_frame">1</field>
+          <field name="credits">6</field>
+          <field name="program_id">7</field>
+      </record>
+    </data>
+</odoo>

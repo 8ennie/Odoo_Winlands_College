@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="1" model="college.staff.academic">
+            <field name="name">Harlan Hart</field>
+            <field name="department_id">1</field>
+            <field name="module_ids">1</field>
+            <field name="module_ids">2</field>
+            <field name="module_ids">3</field>
+            <field name="module_ids">4</field>
+            <field name="module_ids">5</field>
+            <field name="module_ids">6</field>
+            <field name="module_ids">7</field>
+        </record>
+        <record id="2" model="college.staff.academic">
+            <field name="name">Kieran Forbes</field>
+            <field name="department_id">1</field>
+            <field name="module_ids">14</field>
+            <field name="module_ids">8</field>
+            <field name="module_ids">9</field>
+            <field name="module_ids">10</field>
+            <field name="module_ids">11</field>
+            <field name="module_ids">12</field>
+            <field name="module_ids">13</field>
+        </record>
+        <record id="3" model="college.staff.academic">
+            <field name="name">Yuri Grant</field>
+            <field name="department_id">2</field>
+            <field name="module_ids">21</field>
+            <field name="module_ids">15</field>
+            <field name="module_ids">16</field>
+            <field name="module_ids">17</field>
+            <field name="module_ids">18</field>
+            <field name="module_ids">19</field>
+            <field name="module_ids">20</field>
+        </record>
+        <record id="4" model="college.staff.academic">
+            <field name="name">Forrest Walters</field>
+            <field name="department_id">3</field>
+            <field name="module_ids">28</field>
+            <field name="module_ids">22</field>
+            <field name="module_ids">23</field>
+            <field name="module_ids">24</field>
+            <field name="module_ids">25</field>
+            <field name="module_ids">26</field>
+            <field name="module_ids">27</field>
+        </record>
+        <record id="5" model="college.staff.academic">
+            <field name="name">Winter Meyer</field>
+            <field name="department_id">4</field>
+            <field name="module_ids">28</field>
+            <field name="module_ids">29</field>
+            <field name="module_ids">30</field>
+            <field name="module_ids">31</field>
+            <field name="module_ids">32</field>
+            <field name="module_ids">33</field>
+            <field name="module_ids">34</field>
+        </record>
+        <record id="6" model="college.staff.academic">
+            <field name="name">Jenette Fitzpatrick</field>
+            <field name="department_id">5</field>
+            <field name="module_ids">42</field>
+            <field name="module_ids">36</field>
+            <field name="module_ids">37</field>
+            <field name="module_ids">38</field>
+            <field name="module_ids">39</field>
+            <field name="module_ids">40</field>
+            <field name="module_ids">41</field>
+        </record>
+        <record id="7" model="college.staff.academic">
+            <field name="name">Lois Parks</field>
+            <field name="department_id">6</field>
+            <field name="module_ids">49</field>
+            <field name="module_ids">43</field>
+            <field name="module_ids">44</field>
+            <field name="module_ids">45</field>
+            <field name="module_ids">46</field>
+            <field name="module_ids">47</field>
+            <field name="module_ids">48</field>
+        </record>
+      </data>
+    </odoo>
