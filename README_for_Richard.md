@@ -1,16 +1,16 @@
 # Odoo_Winlands_College
 The Odoo Project for Socio Informatics 354
 # Group Members:
-Andrew Prenter - 20456395
-Ayaaz
-Bennie Wiemamm - 23725648
-Tomas Hegewisch - 21071926
-
+## Andrew Prenter - 20456395
+## Ayaaz
+## Bennie Wiemamm - 23725648
+## Tomas Hegewisch - 21071926
+----------------------------------------------------
 
 
 
 # --- Instructions for installing the database ---
-
+---------------------------------------------------
 # --- FEATURES ---
 ## Users + permissions:  
 1. Academic Staff User: 
@@ -81,4 +81,6 @@ Students are provided their own computed login number from the server. This numb
 2. Timeframe (College Admin Module - Module View)
   
 ## Academic Staff are restricted to only seeing the modules they are linked to in the department 
+
+------------------------------------------------------------------------------------------------
 
