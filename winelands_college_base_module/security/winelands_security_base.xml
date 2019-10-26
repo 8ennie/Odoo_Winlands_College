@@ -90,23 +90,14 @@
    ['|',('module_id.department_id.staff_id.partner_id.user_ids.id','=',user.id), ('module_id.staff_ids.partner_id.user_ids.id','=',user.id)]
  </field>
 <field name="groups" eval="[(4,ref('winelands_group_academic'))]"/>
+<field name="perm_read">False</field>
+<field name="perm_write">True</field>
+<field name="perm_create">True</field>
+<field name="perm_unlink">True</field>
  </record>
 </data>
 
-<!-- <data noupdate="0">
- <record id="Admin_department_rule" model="ir.rule">
-   <field name="name">Admin Staff can only Chnages Stuff in there Department</field>
-   <field name="model_id" ref="model_college_department"/>
-   <field name="domain_force">
-     [('staff_id.partner_id.user_ids.id','=',user.id)]
-   </field>
-   <field name="groups" eval="[(4,ref('winelands_group_admin_staff'))]"/>
-   <field name="perm_read">False</field>
-   <field name="perm_write">True</field>
-   <field name="perm_create">True</field>
-   <field name="perm_unlink">True</field>
- </record>
-</data> -->
+
 
 <data noupdate="0">
  <record id="Student_student_rule" model="ir.rule">
