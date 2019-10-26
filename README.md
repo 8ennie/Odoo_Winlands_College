@@ -1,88 +1,125 @@
 # Odoo_Winlands_College
-The Odoo Project for Socio Informatics
-# Roles are as followed(Product Owner):
-### Views
-Andrew
-### Security
-Tomas
-### models
-Bennie
-### Demo_data
-Ayaaz
-### Logo
-Ayaaz
+The Odoo Project for Socio Informatics 354
+# GROUP MEMBERS:
+## Andrew Prenter - 20456395
+## Ayaaz Mullajie - 19772815
+## Bennie Wiemamm - 23725648
+## Tomas Hegewisch - 21071926
+----------------------------------------------------
 
 
-# Extra features
-* Chat function (students and Academic staff)
-* Export-to-PDF
-* The use of an API external API (like the weather API)
-* Text-to-speech function (taking the marks and making it a MP3 file)
 
-# Things to add to BRD - 'features worth trying'
-1.	Richard student / Richard admin staff / Richard academic staff 
-2.	Auto generated emails and logins 
-3.	creating users
-4.	limit view for marks for particular students 
-5.	ISBN checks 
-6.	pen touch description 
-7.	allows a student to be registered for a module and module shows how many students are enrolled for each respective module 
-8.	staff are restricted to only seeing the modules they are linked to in the department 
-9.	Qualification drop down per module 
-10.	Text-to-speech function (taking the marks and making it a MP3 file)
+# --- INSTRUCTIONS ---
+## Install: 
+./oddo-bin -d winelands -i winlands_college_bas_module,college_admin,results_managment
 
-# Testing
-College admin:
-1. create a department 
-2. create an admin staff 
-3. create a acaddemic staff 
-4. create a student 
-5. create a program 
-6. create a module 
+## Login:
+User:admin
+Password: password
 
-College results:
-1. upload a csv file for marks 
-2. create student
-3. create a module 
+## List of users for Richard
 
-Big things:
-1. Make sure modules work independently 
-2. Be able to create and login as user and only see your respective information
-3. Make sure it works on a new odoo (as if Richard were to install)
+1. For Richard Admin:
+- email: 49@cwc.ac.za
+- Password: password
 
-# Side Note
-- departments can only be linked with modules and staff from one way 
-- staff/admin get one snazy email because you cant have more than one login
+2. For Richard Student:
+- email: 110@cwcw.ac.za
+- password: password
 
-# Comments from testing 
-1.	Add title to admin staff
-2.	Change order of admin menu: 
-  •	Department 
-  •	Program 
-  •	Module 
-  •	Admin staff 
-  •	Academic staff 
-  •	Student 
-3.	Change list for qualification 
-4.	We want the staff email address to show 
-5.	Students: student table view, amount of modules + email address 
-6.	Academic staff: table view, amount of lectured classes 
-7.	Link lecturedclass with academic staff (both ways)
-8.	Make sure that college admin staff cannot see/edit marks 
-9.	In college_results in modules table, add a department column 
-10.	Look at search 
-11.	Students should only be able to see their own modules when logged in by a student 
+---------------------------------------------------
+# --- FEATURES ---
+## Users + permissions:  
+1. Academic Staff User: 
+ - Username: namesurname extended by “@cwc.ac.za”
+ - Password: password
 
-All fixed besides 10 and 11
+2. Admin staff user:
+ - Username: namesurname extended by “@cwc.ac.za”
+ - Password: password
+ 
+3. Student user:
+Students are provided their own computed login number from the server. This number will allow them to login into the student module in which they will have access to their respective modules (name, length of module and amount of credits) as well as their marks.
 
-# Comments from testing 2
-1.	Change qualification and length (program view in admin)
-2.	Change lectured class to lecturer (Module view in admin)
-3.	Remove DI from module (module view in admin) 
-4.	How many students are in a module (module view in admin)
-5.	Remove white spaces from staff email (admin staff view in admin)
-6.	Add department to admin staff table (admin staff view in admin) 
-7.	Add program to module (module view in admin)
-8.	Add module to program (program view in admin)
+## Filters:   
+1. For Academic Staff:     
+- Modules   
+  • Modules taught by Academic Staff: Filters all Modules to only the modules that the Academic Staff are lecturing   
+  • Modules this year: Filters all Modules to only show the modules being lectured this year    
+- Students   
+  • In Department: Filters Students to show only he ones in the same department as the staff member   
+  • Being taught: Filter students to show only the ones being taught by specific lectures   
+- Marks    
+  • Current year: Filters the Marks to only show the ones of the current year   
+  • No Mark allocated yet: Filters the Marks to only show the ones that have an allocated mark   
+  • Received a mark: Filters the Marks to only show the ones that have an allocated Mark
+  
+2. For Student   
+- Modules   
+  • Modules this year: Filters all Modules to show only the ones that are lectured this year  
+- Marks   
+  • Current year: Filters the Marks to only show the ones of the current year   
+  • No Mark allocated yet: Filters the Marks to only show the ones that have an allocated mark   
+  • Received a mark: Filters the Marks to only show the ones that have an allocated Mark  
+  • Passed: Filters the Marks to only show the Marks over 50%  • Failed: Filters the Marks to only show the Marks below 50
 
-Fixed so far: 1,3,6,7 and 8
+## Login details: 
+1. Academic Staff User: 
+ - Username: namesurname extended by “@cwc.ac.za”
+ - Password: password
+
+2. Admin staff user:
+ - Username: namesurname extended by “@cwc.ac.za”
+ - Password: password
+ 
+3. Student user:
+ - Username: number provided by the server extended by “@cwc.ac.za”
+ - Password: password
+
+## How to create custom users:  
+1. Academic staff user
+ - Click on College Admin module
+ - Click on Academic Staff listed in the header 
+ - Select the button create 
+ - Fill in the respective fields 
+  
+2. Admin staff user:
+ - Click on College Admin module
+ - Click on Admin Staff listed in the header 
+ - Select the button create 
+ - Fill in the respective fields 
+ 
+3.	Student user:
+ - Click on College Admin module
+ - Click on Admin Staff listed in the header 
+ - Select the button create 
+ - Fill in the respective fields 
+
+## Students can only see their own marks
+ 
+## ISBN constraints: 
+1. SQL constraint for the name of the department
+2. Constraint in enrolled student so that a students marks cannot be above 100 or below 0
+3.	Timeframe constraint to make sure that the timeframe cannot be above 4 or under 0
+4.	Credit constraint so that the credits aren’t 0
+5.	Constraint on module so that the name cannot be null 
+6.	Constraint on the length of the module so that it cannot be longer than 10 years and less than 0  
+  
+## Computed data: 
+1. Amount of credits per student (Results Management Model - Student View) 
+2. Amount of staff per department (College Admin Module - Department View)  
+3. Amount of modules lectured per academic staff (College Admin Module - Academic Staff View) 
+4. Amount of students per module (College Admin Module - Module View)
+  
+## Drop down program qualifications: 
+1. Within the College Admin Module - Program View
+2. Shows the available qualifications able to be selected for a program
+   
+## Pen touch description:
+1. Length (College Admin Module - Program View)
+2. Timeframe (College Admin Module - Module View)
+  
+## Academic Staff are restricted to only seeing the modules they are linked to in the department 
+
+------------------------------------------------------------------------------------------------
+
