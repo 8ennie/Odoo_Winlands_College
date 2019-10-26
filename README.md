@@ -20,7 +20,7 @@ Password: password
 ## List of users for Richard
 
 1. For Richard Admin:
-- email: 49@cwc.ac.za
+- email: 51@cwc.ac.za
 - Password: password
 
 2. For Richard Student:
