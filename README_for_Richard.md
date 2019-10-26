@@ -10,9 +10,26 @@ The Odoo Project for Socio Informatics 354
 
 
 # --- INSTRUCTIONS ---
+## Install: 
+./oddo-bin -d winelands -i winlands_college_bas_module,college_admin,results_managment
+
+## Login:
+User:admin
+Password: password
+
+## List of users for Richard
+
+For Richard Admin:
+email: 49@cwc.ac.za
+Password: password
+
+For Richard Student:
+110@cwcw.ac.za
+password: password
+
 ---------------------------------------------------
 # --- FEATURES ---
-## [Users + permissions:]  
+## Users + permissions:  
 1. Academic Staff User: 
  - Username: namesurname extended by “@cwc.ac.za”
  - Password: password
@@ -24,7 +41,7 @@ The Odoo Project for Socio Informatics 354
 3. Student user:
 Students are provided their own computed login number from the server. This number will allow them to login into the student module in which they will have access to their respective modules (name, length of module and amount of credits) as well as their marks.
 
-[Login details:] 
+## Login details: 
 1. Academic Staff User: 
  - Username: namesurname extended by “@cwc.ac.za”
  - Password: password
