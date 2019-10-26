@@ -1,9 +1,0 @@
-college.department
-college.enrolledstudent
-college.lecturedclasses
-college.module
-college.program
-college.staff.academic
-college.staff.admin
-college.staff
-college.student
