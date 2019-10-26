@@ -2,7 +2,7 @@
 The Odoo Project for Socio Informatics 354
 # GROUP MEMBERS:
 ## Andrew Prenter - 20456395
-## Ayaaz 
+## Ayaaz Mullajie - 19772815
 ## Bennie Wiemamm - 23725648
 ## Tomas Hegewisch - 21071926
 ----------------------------------------------------
