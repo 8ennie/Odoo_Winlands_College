@@ -1,4 +1,0 @@
-only admin staff can create and delete a module.
-* the year and studnet id and module id the combiniation needs to be unique, this has an efect on which year you can use.
-* The admin cannot change marks
-* only the academics can change 
