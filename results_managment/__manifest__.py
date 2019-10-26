@@ -27,7 +27,6 @@
     # always loaded
     'data': [
         'views/results_menu.xml',
-        'views/module_view.xml',
         'views/marks_view.xml',
         'views/student_transcript.xml',
     ],
