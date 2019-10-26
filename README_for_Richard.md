@@ -41,6 +41,28 @@ Password: password
 3. Student user:
 Students are provided their own computed login number from the server. This number will allow them to login into the student module in which they will have access to their respective modules (name, length of module and amount of credits) as well as their marks.
 
+## Filters:   
+1. For Academic Staff:     
+- Modules   
+  • Modules taught by Academic Staff: Filters all Modules to only the modules that the Academic Staff are lecturing   
+  • Modules this year: Filters all Modules to only show the modules being lectured this year    
+- Students   
+  • In Department: Filters Students to show only he ones in the same department as the staff member   
+  • Being taught: Filter students to show only the ones being taught by specific lectures   
+- Marks    
+  • Current year: Filters the Marks to only show the ones of the current year   
+  • No Mark allocated yet: Filters the Marks to only show the ones that have an allocated mark   
+  • Received a mark: Filters the Marks to only show the ones that have an allocated Mark
+  
+2. For Student   
+- Modules   
+  • Modules this year: Filters all Modules to show only the ones that are lectured this year  
+- Marks   
+  • Current year: Filters the Marks to only show the ones of the current year   
+  • No Mark allocated yet: Filters the Marks to only show the ones that have an allocated mark   
+  • Received a mark: Filters the Marks to only show the ones that have an allocated Mark  
+  • Passed: Filters the Marks to only show the Marks over 50%  • Failed: Filters the Marks to only show the Marks below 50
+
 ## Login details: 
 1. Academic Staff User: 
  - Username: namesurname extended by “@cwc.ac.za”
