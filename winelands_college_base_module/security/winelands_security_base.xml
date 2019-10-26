@@ -90,7 +90,7 @@
    ['|',('module_id.department_id.staff_id.partner_id.user_ids.id','=',user.id), ('module_id.staff_ids.partner_id.user_ids.id','=',user.id)]
  </field>
 <field name="groups" eval="[(4,ref('winelands_group_academic'))]"/>
-<field name="perm_read">False</field>
+<field name="perm_read">True</field>
 <field name="perm_write">True</field>
 <field name="perm_create">True</field>
 <field name="perm_unlink">True</field>
