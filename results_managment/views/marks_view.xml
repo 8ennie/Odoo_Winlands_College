@@ -36,6 +36,7 @@
      <field name="arch" type="xml">
          <search string="Search Marks">
              <field name="module_id"/>
+             <field name="student_id"/>
              <filter string="Current Year" domain="[('year','in',['2019'])]" name= "filter_current_year"/>
              <filter string="Passed" domain="[('mark','>',50)]" name= "filter_staff_teaches" groups="winelands_college_base_module.winelands_group_student"/>
              <filter string="Failed" domain="['&amp;',('mark','&lt;',50),('mark','!=',None)]" name= "filter_staff_teaches" groups="winelands_college_base_module.winelands_group_student"/>
