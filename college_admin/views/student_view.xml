@@ -50,6 +50,7 @@
      <field name="arch" type="xml">
          <search string="Search Student">
              <field name="name"/>
+             <field name="program_id"/>
              <filter string="In My Department" domain="[('student_modules.module_id.department_id.staff_id.partner_id.user_ids.id','=',uid)]" name= "filter_staff_department" groups="winelands_college_base_module.winelands_group_academic"/>
              <filter string="I am Teaching" domain="[('student_modules.module_id.staff_ids.partner_id.user_ids.id','=',uid)]" name= "filter_staff_teaches" groups="winelands_college_base_module.winelands_group_academic"/>
          </search>
