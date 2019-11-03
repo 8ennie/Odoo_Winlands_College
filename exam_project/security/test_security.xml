@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<odoo>
+<record id="module_item_category" model="ir.module.category">
+    <field name="name">Items view</field>
+  </record>
+<!-- Student User Group -->
+<record id="todo_group_all" model="res.groups">
+    <field name="name">todo users</field>
+    <field name="category_id"
+           ref="module_item_category"/>
+    <field name="implied_ids"
+           eval="[(4, ref('base.group_user'))]"/>
+</record>
+<record id="todo_group_viewers" model="res.groups">
+    <field name="name">todo viewers</field>
+    <field name="category_id"
+           ref="module_item_category"/>
+    <field name="implied_ids"
+           eval="[(4, ref('base.group_user'))]"/>
+</record>
+
+<!-- <data noupdate="0">
+ <record id="item_user_rule" model="ir.rule">
+ <field name="name">item user acccses rule</field>
+ <field name="model_id" ref="model_todo_item"/>
+ <field name="domain_force">
+ [('done','=',False)]
+ </field>
+ <field name="groups" eval="[(4,ref('todo_group_all'))]"/>
+ </record>
+ </data> -->
+
+
+</odoo>
