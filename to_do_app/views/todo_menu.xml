@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<odoo>
+ <!-- TO DO menu App -->
+ <menuitem id="menu_todo"
+ name="To Do Application" />
+
+<!-- Action to open the item list -->
+ <act_window id="action_todo_item"
+ name="To Do Item"
+ res_model="todo.item"
+ view_mode="tree,form"
+ />
+ <!-- Action for person-->
+ <act_window id= "Action_todo_person"
+ name = "To Do Person"
+ res_model = "todo.person"
+ view_mode = "tree,form"
+ />
+ <!--Aaction for dependent-->
+ <act_window id = "action_show_dependet"
+ name = "who is this person related to?"
+ res_model = "todo.dependent"
+ view_mode = "tree,form"/>
+
+
+ <!-- Menue item for dependents-->
+ <menuitem id = "menu_show_dependent"
+ name = "Dependent"
+ parent = "menu_todo"
+ action = "action_show_dependet"/>
+<!-- Menu item to open the item list -->
+ <menuitem id="menu_library_book"
+ name="Items"
+ parent="menu_todo"
+ action="action_todo_item"
+ />
+<!-- Menue item for person-->
+<menuitem id="menu_toto_person"
+name = "People"
+parent = "menu_todo"
+action = "Action_todo_person"/>
+</odoo>

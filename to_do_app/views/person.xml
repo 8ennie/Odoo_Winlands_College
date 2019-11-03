@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<odoo>
+ <record id="view_form_item" model="ir.ui.view">
+ <field name="name">person</field>
+ <field name="model">todo.person</field>
+ <field name="arch" type="xml">
+ <form string="item">
+ <header>
+ <button name="button_do_somthing" type="object"
+ string="A fun button that will populate the thing" />
+</header>
+ <group>
+ <field name="name" />
+ <field name="mail"/>
+ <field name = "item" widget="many2many_tags" />
+ <field name ="per_id"/>
+ </group>
+ </form>
+ </field>
+ </record>
+<record id="view_tree_person" model="ir.ui.view">
+    <field name="name">person</field>
+    <field name="model">todo.person</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name" />
+        <field name="mail" />
+        <field name ="per_id"/>
+      </tree>
+    </field>
+  </record>
+
+
+</odoo>

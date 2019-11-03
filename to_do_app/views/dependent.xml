@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<odoo>
+ <record id="view_form_dependent" model="ir.ui.view">
+ <field name="name">item Form</field>
+ <field name="model">todo.dependent</field>
+ <field name="arch" type="xml">
+ <form string="item">
+ <header>
+ <button name="button_help" type="object"
+ string="Click for help" />
+</header>
+ <group>
+ <field name="name" />
+ <field name = "person" widget="Many2many_tags"/>
+ </group>
+ </form>
+ </field>
+ </record>
+
+<record id="view_tree_depends" model="ir.ui.view">
+    <field name="name">person</field>
+    <field name="model">todo.dependent</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name"/>
+        <field name="initials" />
+        <field name = "randomFact"/>
+        <field name = "person" widget="many2many_tags"/>
+      </tree>
+    </field>
+  </record>
+
+</odoo>

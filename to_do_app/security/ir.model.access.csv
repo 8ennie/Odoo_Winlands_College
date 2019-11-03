@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+Accses_for_users,findagooname,model_todo_item,todo_group_all,1,1,1,1
+accsess_for_view,onlyseelist,model_todo_item,todo_group_viewers,1,0,0,0
+accsess_for_person,seethepeople,model_todo_person,todo_group_all,1,1,1,1
+accsess_for_dependent,seealldependent,model_todo_dependent,todo_group_all,1,1,1,1

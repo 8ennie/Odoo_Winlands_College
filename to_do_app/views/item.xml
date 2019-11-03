@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<odoo>
+ <record id="view_form_item" model="ir.ui.view">
+ <field name="name">item Form</field>
+ <field name="model">todo.item</field>
+ <field name="arch" type="xml">
+ <form string="item">
+ <header>
+ <button name="button_check_isbn" type="object"
+ string="Check ISBN" />
+</header>
+ <group>
+ <field name="name" />
+ <field name="explanation"/>
+ <field name="done" />
+ <field name = "person" widget="many2many_tags" />
+ <field name = "time_to_compleate"/>
+ </group>
+ </form>
+ </field>
+ </record>
+
+
+<record id="view_tree_item" model="ir.ui.view">
+    <field name="name">To Do items</field>
+    <field name="model">todo.item</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name"/>
+        <field name="done"/>
+        <field name = "time_to_compleate"/>
+      </tree>
+    </field>
+  </record>
+
+
+
+</odoo>
