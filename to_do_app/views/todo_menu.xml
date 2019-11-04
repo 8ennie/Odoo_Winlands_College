@@ -2,7 +2,7 @@
 <odoo>
  <!-- TO DO menu App -->
  <menuitem id="menu_todo"
- name="To Do Application" />
+ name="To Do Application - Tom" />
 
 <!-- Action to open the item list -->
  <act_window id="action_todo_item"
@@ -25,18 +25,18 @@
 
  <!-- Menue item for dependents-->
  <menuitem id = "menu_show_dependent"
- name = "Dependent"
+ name = "Dependent on who"
  parent = "menu_todo"
  action = "action_show_dependet"/>
 <!-- Menu item to open the item list -->
  <menuitem id="menu_library_book"
- name="Items"
+ name="To do items"
  parent="menu_todo"
  action="action_todo_item"
  />
 <!-- Menue item for person-->
 <menuitem id="menu_toto_person"
-name = "People"
+name = "The People who should do thigs"
 parent = "menu_todo"
 action = "Action_todo_person"/>
 </odoo>
